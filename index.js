@@ -116,5 +116,14 @@
 // Solution
 
 function unique(str) {
-  return str;
+  let tempStr = new Set();
+
+  for (let letter of str) {
+    if (tempStr.has(letter)) {
+      return false;
+    }
+    tempStr.add(letter);
+  }
+  return true;
 }
+console.log(unique("abcde"));
