@@ -115,22 +115,32 @@
 // Challenge 6 unique item using (Set())
 // Solution
 
-function unique(str) {
-  // Solution one
-  //   let tempStr = new Set();
+// function unique(str) {
+//   // Solution one
+//   //   let tempStr = new Set();
 
-  //   for (let letter of str) {
-  //     if (tempStr.has(letter)) {
-  //       return false;
-  //     }
-  //     tempStr.add(letter);
-  //   }
-  //   return true;
+//   //   for (let letter of str) {
+//   //     if (tempStr.has(letter)) {
+//   //       return false;
+//   //     }
+//   //     tempStr.add(letter);
+//   //   }
+//   //   return true;
 
-  /////////////////////////
-  // Solution two
-  //   to check if there's duplicate
+//   /////////////////////////
+//   // Solution two
+//   //   to check if there's duplicate
 
-  return new Set(str).size === str.length;
+// //   return new Set(str).size === str.length;
+
+// console.log(unique("abcdeaa"));
+// }
+
+///////////////////
+// Challenge 7  (object property values)
+// Solution 1
+
+function getUnique(arr) {
+  return arr;
 }
-console.log(unique("abcdeaa"));
+console.log(getUnique(products));
