@@ -100,14 +100,21 @@
 // challenge 5 Arr sum
 //return arr sum value
 
-function ArrSum(arr) {
-  let temArr = arr.sort((a, b) => {
-    return a - b;
-  });
+// function ArrSum(arr) {
+//   let temArr = arr.sort((a, b) => {
+//     return a - b;
+//   });
 
-  let largest = temArr.pop();
-  let number = 0;
-  temArr.forEach(item => (number += item));
-  return largest === number;
+//   let largest = temArr.pop();
+//   let number = 0;
+//   temArr.forEach(item => (number += item));
+//   return largest === number;
+// }
+// console.log(ArrSum([1, 6, 4, 2, 13]));
+
+// Challenge 6 unique item using (Set())
+// Solution
+
+function unique(str) {
+  return str;
 }
-console.log(ArrSum([1, 6, 4, 2, 13]));
