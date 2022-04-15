@@ -71,14 +71,20 @@
 
 // CHALLENGE 3 CAPITALIZE FIRST LETTER
 //  solution
-function capitalize(str) {
-  let newWord = str.toLowerCase().split(" ");
+// function capitalize(str) {
+//   let newWord = str.toLowerCase().split(" ");
 
-  for (let i = 0; i < newWord.length; i++) {
-    newWord[i] =
-      newWord[i].substring(0, 1).toUpperCase() + newWord[i].substring(1);
-  }
+//   for (let i = 0; i < newWord.length; i++) {
+//     newWord[i] =
+//       newWord[i].substring(0, 1).toUpperCase() + newWord[i].substring(1);
+//   }
 
-  return newWord.join(" ");
-}
-console.log(capitalize("qabas al ani"));
+//   return newWord.join(" ");
+// }
+// console.log(capitalize("wE source These poSitions directly from huNdreds"));
+
+// Challenge 4
+// return a unique value for str
+// Solution
+
+function unique(str) {}
