@@ -87,12 +87,17 @@
 // return a unique value for str
 // Solution
 
-function unique(str) {
-  for (var i = 0; i < str.length; i++) {
-    if (str.lastIndexOf(str[i]) !== i) {
-      return false;
-    }
-  }
-  return true;
-}
-console.log(unique("abcde"));
+// function unique(str) {
+//   for (var i = 0; i < str.length; i++) {
+//     if (str.lastIndexOf(str[i]) !== i) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(unique("abcde"));
+
+// challenge 5 Arr sum
+//return arr sum value
+
+function ArrSum(arr) {}
