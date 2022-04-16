@@ -162,6 +162,8 @@ let products = [
   },
 ];
 function getUnique(arr) {
-  return arr;
+  // if you want to find the company name
+  let tempArr = arr.map(item => item.Company);
+  return tempArr;
 }
 console.log(getUnique(products));
