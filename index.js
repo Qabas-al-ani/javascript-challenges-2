@@ -139,42 +139,53 @@
 ///////////////////
 // Challenge 7  (object property values)
 // Solution 1
-let products = [
-  {
-    title: "Iphone8",
-    Company: "QmQ",
-  },
-  {
-    title: "Iphone1",
-    Company: "QQQ",
-  },
-  {
-    title: "Iphone4",
-    Company: "QmQ",
-  },
-  {
-    title: "Iphone8",
-    Company: "QQQ",
-  },
-  {
-    title: "Iphone8",
-    Company: "QmQ",
-  },
-];
-function getUnique(arr) {
-  //   // if you want to find the company name
-  //   let tempArr = arr.map(item => item.Company);
-  //   //   if you want teh company not to be repeated over and over
-  //   return [...new Set(tempArr)];
+// let products = [
+//   {
+//     title: "Iphone8",
+//     Company: "QmQ",
+//   },
+//   {
+//     title: "Iphone1",
+//     Company: "QQQ",
+//   },
+//   {
+//     title: "Iphone4",
+//     Company: "QmQ",
+//   },
+//   {
+//     title: "Iphone8",
+//     Company: "QQQ",
+//   },
+//   {
+//     title: "Iphone8",
+//     Company: "QmQ",
+//   },
+// ];
+// function getUnique(arr) {
+//   //   // if you want to find the company name
+//   //   let tempArr = arr.map(item => item.Company);
+//   //   //   if you want teh company not to be repeated over and over
+//   //   return [...new Set(tempArr)];
 
-  ///////////
-  // Solution 2 (using reduce method)
+//   ///////////
+//   // Solution 2 (using reduce method)
 
-  return [
-    ...arr.reduce((acc, curr) => {
-      acc.add(curr.Company);
-      return acc;
-    }, new Set()),
-  ];
+//   return [
+//     ...arr.reduce((acc, curr) => {
+//       acc.add(curr.Company);
+//       return acc;
+//     }, new Set()),
+//   ];
+// }
+// console.log(getUnique(products));
+
+///////////////////////
+
+// Challenge 8
+// count letter in (javascript)
+
+function countLetter(str) {
+  return newArr;
 }
-console.log(getUnique(products));
+
+console.log(countLetter("qabas"));
