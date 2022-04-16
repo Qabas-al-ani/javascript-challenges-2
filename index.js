@@ -139,7 +139,28 @@
 ///////////////////
 // Challenge 7  (object property values)
 // Solution 1
-
+let products = [
+  {
+    title: "Iphone8",
+    Company: "QmQ",
+  },
+  {
+    title: "Iphone1",
+    Company: "QQQ",
+  },
+  {
+    title: "Iphone4",
+    Company: "QmQ",
+  },
+  {
+    title: "Iphone8",
+    Company: "QQQ",
+  },
+  {
+    title: "Iphone8",
+    Company: "QmQ",
+  },
+];
 function getUnique(arr) {
   return arr;
 }
