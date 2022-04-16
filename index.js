@@ -162,9 +162,19 @@ let products = [
   },
 ];
 function getUnique(arr) {
-  // if you want to find the company name
-  let tempArr = arr.map(item => item.Company);
-  //   if you want teh company not to be repeated over and over
-  return [...new Set(tempArr)];
+  //   // if you want to find the company name
+  //   let tempArr = arr.map(item => item.Company);
+  //   //   if you want teh company not to be repeated over and over
+  //   return [...new Set(tempArr)];
+
+  ///////////
+  // Solution 2 (using reduce method)
+
+  return [
+    ...arr.reduce((acc, curr) => {
+      acc.add(curr.Company);
+      return acc;
+    }, new Set()),
+  ];
 }
 console.log(getUnique(products));
