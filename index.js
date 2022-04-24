@@ -255,22 +255,37 @@
 // }
 // console.log(maxChars("qabas"));
 ////////////////////////////
-function longestWord(sen) {
-  // to take off comas
-  const longest = sen.toLowerCase().match(/[a-z0-9]+/g);
-  // to sort the array
-  const sorted = longest.sort(function (a, b) {
-    return b.length - a.length;
-  });
-  // if multiple words
-  const sortedWords = sorted.filter(word => {
-    return word.length === sorted[0].length;
-  });
+// function longestWord(sen) {
+//   // to take off comas
+//   const longest = sen.toLowerCase().match(/[a-z0-9]+/g);
+//   // to sort the array
+//   const sorted = longest.sort(function (a, b) {
+//     return b.length - a.length;
+//   });
+//   // if multiple words
+//   const sortedWords = sorted.filter(word => {
+//     return word.length === sorted[0].length;
+//   });
 
-  if (sortedWords.length === 1) {
-    return sortedWords[0];
-  } else {
-    return sortedWords;
+//   if (sortedWords.length === 1) {
+//     return sortedWords[0];
+//   } else {
+//     return sortedWords;
+//   }
+// }
+// console.log(longestWord("my Name is, Qabas"));
+////////////////////////
+
+function chunkArray(arr, len) {
+  // init the chunked arr
+  const chunkedArray = [];
+  // set index
+  let i = 0;
+  // loop while i is less than array length
+  while (i < arr.length) {
+    chunkedArray.push(arr.slice(i, i + len));
+    i += len;
   }
+  return chunkedArray;
 }
-console.log(longestWord("my Name is, Qabas"));
+console.log(chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 1));
