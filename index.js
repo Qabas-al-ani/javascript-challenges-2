@@ -184,8 +184,9 @@
 // Challenge 8
 // count letter in (javascript)
 
-function countLetter(str) {
-  return newArr;
+//  reverse string
+function reverseString(str) {
+  return str.split("").reverse().join("");
 }
 
-console.log(countLetter("qabas"));
+console.log(reverseString("qabasa"));
