@@ -192,8 +192,15 @@
 // console.log(reverseString("qabasa"));
 
 //////////////////////
-function isPalindrome(str) {
-  let wordArr = str.split("").reverse().join("");
-  return wordArr === str;
+// function isPalindrome(str) {
+//   let wordArr = str.split("").reverse().join("");
+//   return wordArr === str;
+// }
+// console.log(isPalindrome("madam"));
+////////////////
+function reversInt(int) {
+  let reversedInt = int.toString().split("").reverse().join("");
+
+  return parseInt(reversedInt);
 }
-console.log(isPalindrome("madam"));
+console.log(reversInt(12345));
