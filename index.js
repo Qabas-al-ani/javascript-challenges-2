@@ -234,5 +234,23 @@
 // console.log(fizzBuzz(100));
 ///////////////////////
 function maxChars(str) {
-  return str;
+  const charMap = {};
+  let maxNum = 0;
+  let maxCharacter = "";
+
+  str.split("").forEach(char => {
+    if (charMap[char]) {
+      charMap[char]++;
+    } else {
+      charMap[char] = 1;
+    }
+  });
+  for (let char in charMap) {
+    if (charMap[char] > maxNum) {
+      maxNum = charMap[char];
+      maxCharacter = char;
+    }
+  }
+  return maxCharacter;
 }
+console.log(maxChars("qabas"));
