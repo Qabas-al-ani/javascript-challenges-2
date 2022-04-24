@@ -205,14 +205,18 @@
 // }
 // console.log(reversInt(12345));
 // //////////////
-function capitalizeLetter(str) {
-  let strArr = str.toLowerCase().split(" ");
+// function capitalizeLetter(str) {
+//   let strArr = str.toLowerCase().split(" ");
 
-  for (let i = 0; i < strArr.length; i++) {
-    strArr[i] =
-      strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1);
-  }
-  return strArr.join(" ");
+//   for (let i = 0; i < strArr.length; i++) {
+//     strArr[i] =
+//       strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1);
+//   }
+//   return strArr.join(" ");
+// }
+
+// console.log(capitalizeLetter("qaBas al aNI"));
+/////////////////////
+function fizzBuzz() {
+  return fizzBuzz;
 }
-
-console.log(capitalizeLetter("qaBas al aNI"));
