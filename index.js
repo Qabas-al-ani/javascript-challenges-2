@@ -198,9 +198,13 @@
 // }
 // console.log(isPalindrome("madam"));
 ////////////////
-function reversInt(int) {
-  let reversedInt = int.toString().split("").reverse().join("");
+// function reversInt(int) {
+//   let reversedInt = int.toString().split("").reverse().join("");
 
-  return parseInt(reversedInt);
-}
-console.log(reversInt(12345));
+//   return parseInt(reversedInt);
+// }
+// console.log(reversInt(12345));
+// //////////////
+function capitalizeLetter(str) {}
+
+console.log(capitalizeLetter("qaBas al aNI"));
