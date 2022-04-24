@@ -184,9 +184,16 @@
 // Challenge 8
 // count letter in (javascript)
 
-//  reverse string
-function reverseString(str) {
-  return str.split("").reverse().join("");
-}
+// //  reverse string
+// function reverseString(str) {
+//   return str.split("").reverse().join("");
+// }
 
-console.log(reverseString("qabasa"));
+// console.log(reverseString("qabasa"));
+
+//////////////////////
+function isPalindrome(str) {
+  let wordArr = str.split("").reverse().join("");
+  return wordArr === str;
+}
+console.log(isPalindrome("madam"));
