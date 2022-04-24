@@ -256,5 +256,21 @@
 // console.log(maxChars("qabas"));
 ////////////////////////////
 function longestWord(sen) {
-  return sen;
+  // to take off comas
+  const longest = sen.toLowerCase().match(/[a-z0-9]+/g);
+  // to sort the array
+  const sorted = longest.sort(function (a, b) {
+    return b.length - a.length;
+  });
+  // if multiple words
+  const sortedWords = sorted.filter(word => {
+    return word.length === sorted[0].length;
+  });
+
+  if (sortedWords.length === 1) {
+    return sortedWords[0];
+  } else {
+    return sortedWords;
+  }
 }
+console.log(longestWord("my Name is, Qabas"));
