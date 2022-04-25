@@ -316,7 +316,11 @@
 // }
 // console.log(letterChanges("Hello There"));
 ////////////////////////////////
-function addAll(...numbers) {
-  return numbers.reduce((acc, cur) => acc + cur);
+// function addAll(...numbers) {
+//   return numbers.reduce((acc, cur) => acc + cur);
+// }
+// console.log(addAll(1, 2, 3));
+/////////////////////
+function allPrimes() {
+  return allPrimes;
 }
-console.log(addAll(1, 2, 3));
