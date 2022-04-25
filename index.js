@@ -276,16 +276,20 @@
 // console.log(longestWord("my Name is, Qabas"));
 ////////////////////////
 
-function chunkArray(arr, len) {
-  // init the chunked arr
-  const chunkedArray = [];
-  // set index
-  let i = 0;
-  // loop while i is less than array length
-  while (i < arr.length) {
-    chunkedArray.push(arr.slice(i, i + len));
-    i += len;
-  }
-  return chunkedArray;
+// function chunkArray(arr, len) {
+//   // init the chunked arr
+//   const chunkedArray = [];
+//   // set index
+//   let i = 0;
+//   // loop while i is less than array length
+//   while (i < arr.length) {
+//     chunkedArray.push(arr.slice(i, i + len));
+//     i += len;
+//   }
+//   return chunkedArray;
+// }
+// console.log(chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 1));
+/////////////////////////
+function isAnagram(str) {
+  return str;
 }
-console.log(chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 1));
