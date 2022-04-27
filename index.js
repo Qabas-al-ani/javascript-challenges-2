@@ -347,7 +347,13 @@
 //   numberArr = new Set();
 // }
 // console.log();
-function reverseString(str) {
-  return str.split(" ").reverse().join(" ");
+////////////////////////////////////////////////
+// function reverseString(str) {
+//   return str.split("").reverse().join("");
+// }
+// console.log(reverseString("hello qabas"));
+///////////////////////////////////////////////
+
+function isPalindrome(str) {
+  return isPrime;
 }
-console.log(reverseString("hello qabas"));
