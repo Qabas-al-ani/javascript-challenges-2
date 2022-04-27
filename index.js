@@ -366,7 +366,14 @@
 // }
 // console.log(reversedInt(-12345));
 ///////////////////////////////////////////////
-
+// (Counting objects: 100% (5/5), done)
 function capitalizeLetters(str) {
-  return str;
+  let wordArr = str.toLowerCase().split(" ");
+
+  for (let i = 0; i < wordArr.length; i++) {
+    wordArr[i] =
+      wordArr[i].substring(0, 1).toUpperCase() + wordArr[i].substring(1);
+  }
+  return wordArr.join(" ");
 }
+console.log(capitalizeLetters("qaBas, aL aNI,"));
