@@ -360,8 +360,13 @@
 // }
 // console.log(isPalindrome("madams"));
 //////////////////////
-function reversedInt(int) {
-  let newNum = int.toString().split("").reverse().join("");
-  return parseInt(newNum) * Math.sign(int);
+// function reversedInt(int) {
+//   let newNum = int.toString().split("").reverse().join("");
+//   return parseInt(newNum) * Math.sign(int);
+// }
+// console.log(reversedInt(-12345));
+///////////////////////////////////////////////
+
+function capitalizeLetters(str) {
+  return str;
 }
-console.log(reversedInt(-12345));
