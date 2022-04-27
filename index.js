@@ -321,23 +321,28 @@
 // }
 // console.log(addAll(1, 2, 3));
 /////////////////////
-function allPrimes(numbers) {
-  let total = 0;
+// function allPrimes(numbers) {
+//   let total = 0;
 
-  function isPrime(i) {
-    for (let j = 2; j < i; j++) {
-      if (i % j === 0) {
-        return false;
-      }
-    }
-    return true;
-  }
+//   function isPrime(i) {
+//     for (let j = 2; j < i; j++) {
+//       if (i % j === 0) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
 
-  for (let i = 2; i <= numbers; i++) {
-    if (isPrime(i)) {
-      total += i;
-    }
-  }
-  return total;
+//   for (let i = 2; i <= numbers; i++) {
+//     if (isPrime(i)) {
+//       total += i;
+//     }
+//   }
+//   return total;
+// }
+// console.log(allPrimes(100));
+////////////////////
+// find duplicate
+function findDuplicates() {
+  return allPrimes;
 }
-console.log(allPrimes(100));
