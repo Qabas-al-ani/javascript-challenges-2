@@ -343,7 +343,10 @@
 // console.log(allPrimes(100));
 ////////////////////
 // find duplicate
-function findDuplicates(num) {
-  numberArr = new Set();
+// function findDuplicates(num) {
+//   numberArr = new Set();
+// }
+// console.log();
+function reverseString(str) {
+  return str;
 }
-console.log();
