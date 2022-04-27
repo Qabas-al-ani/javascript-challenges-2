@@ -361,5 +361,7 @@
 // console.log(isPalindrome("madams"));
 //////////////////////
 function reversedInt(int) {
-  return newInt;
+  let newNum = int.toString().split("").reverse().join("");
+  return parseInt(newNum) * Math.sign(int);
 }
+console.log(reversedInt(-12345));
