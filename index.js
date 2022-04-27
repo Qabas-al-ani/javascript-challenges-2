@@ -437,13 +437,18 @@
 // }
 // console.log(longestWord("Qabas, al ani"));
 ////////////////////////
-function chunkedArray(arr, len) {
-  const chunk = [];
-  i = 0;
-  while (i < arr.length) {
-    chunk.push(arr.slice(i, i + len));
-    i += len;
-  }
-  return chunk;
+// function chunkedArray(arr, len) {
+//   const chunk = [];
+//   i = 0;
+//   while (i < arr.length) {
+//     chunk.push(arr.slice(i, i + len));
+//     i += len;
+//   }
+//   return chunk;
+// }
+// console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 9));
+////////////////////
+function flattenArray(arrays) {
+  return arrays;
 }
-console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 9));
+console.log(flattenArray([1, 2], [3, 4], [5, 6, 7]));
