@@ -385,5 +385,23 @@
 // console.log(capitalizeLetters("qaBas aL aNI"));
 ////////////////////////////////
 function maxCharacter(str) {
-  return str;
+  let charMap = {};
+  let maxNum = 0;
+  let maxChar = "";
+
+  str.split("").forEach(function (char) {
+    if (charMap[char]) {
+      return charMap[char]++;
+    } else {
+      return (charMap[char] = 1);
+    }
+  });
+  for (let char in charMap) {
+    if (charMap[char] > maxNum) {
+      maxNum = charMap[char];
+      maxChar = char;
+    }
+  }
+  return maxChar;
 }
+console.log(maxCharacter("qabas"));
