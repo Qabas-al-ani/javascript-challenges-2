@@ -422,17 +422,21 @@
 // }
 // console.log(fizzBuzz(100));
 //////////////////////////////////
-function longestWord(sen) {
-  //  filter the sen match
-  let senArray = sen.toLowerCase().match(/[a-z0-9]+/g);
-  // sort by length
-  const sorted = senArray.sort(function (a, b) {
-    return b.length - a.length;
-  });
-  // if multiple words
-  const longestWordArray = sorted.filter(function (word) {
-    return word.length === sorted[0].length;
-  });
-  return longestWordArray;
+// function longestWord(sen) {
+//   //  filter the sen match
+//   let senArray = sen.toLowerCase().match(/[a-z0-9]+/g);
+//   // sort by length
+//   const sorted = senArray.sort(function (a, b) {
+//     return b.length - a.length;
+//   });
+//   // if multiple words
+//   const longestWordArray = sorted.filter(function (word) {
+//     return word.length === sorted[0].length;
+//   });
+//   return longestWordArray;
+// }
+// console.log(longestWord("Qabas, al ani"));
+////////////////////////
+function chunkedArray(arr, len) {
+  return arr;
 }
-console.log(longestWord("Qabas, al ani"));
