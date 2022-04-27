@@ -368,12 +368,18 @@
 ///////////////////////////////////////////////
 // (Counting objects: 100% (5/5), done)
 function capitalizeLetters(str) {
-  let wordArr = str.toLowerCase().split(" ");
+  // let wordArr = str.toLowerCase().split(" ");
 
-  for (let i = 0; i < wordArr.length; i++) {
-    wordArr[i] =
-      wordArr[i].substring(0, 1).toUpperCase() + wordArr[i].substring(1);
-  }
-  return wordArr.join(" ");
+  // for (let i = 0; i < wordArr.length; i++) {
+  //   wordArr[i] =
+  //     wordArr[i].substring(0, 1).toUpperCase() + wordArr[i].substring(1);
+  // }
+  // return wordArr.join(" ");
+
+  ///////////////////
+  // solution 2
+  return str.toLowerCase().replace(/\b[a-z]/gi, function (letter) {
+    return letter.toUpperCase();
+  });
 }
-console.log(capitalizeLetters("qaBas, aL aNI,"));
+console.log(capitalizeLetters("qaBas aL aNI"));
