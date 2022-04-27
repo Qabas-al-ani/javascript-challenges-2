@@ -348,5 +348,6 @@
 // }
 // console.log();
 function reverseString(str) {
-  return str;
+  return str.split(" ").reverse().join(" ");
 }
+console.log(reverseString("hello qabas"));
