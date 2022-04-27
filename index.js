@@ -355,5 +355,7 @@
 ///////////////////////////////////////////////
 
 function isPalindrome(str) {
-  return isPrime;
+  let newWordArray = str.split("").reverse().join("");
+  return newWordArray === str;
 }
+console.log(isPalindrome("madams"));
