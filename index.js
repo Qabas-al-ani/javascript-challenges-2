@@ -455,7 +455,12 @@
 // }
 // console.log(flattenArray([[1, 2], [3, 4], [5, 6], [7]]));
 /////////////////////
-function isAnagram(str) {
-  return str;
+function isAnagram(str1, str2) {
+  return formatString(str1) === formatString(str2);
+
+  // helper function
+  function formatString(str) {
+    return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
+  }
 }
-console.log(isAnagram("below"));
+console.log(isAnagram("below", "elbow"));
