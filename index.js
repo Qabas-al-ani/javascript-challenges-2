@@ -449,6 +449,8 @@
 // console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 9));
 ////////////////////
 function flattenArray(arrays) {
-  return arrays;
+  return arrays.reduce(function (a, b) {
+    return a.concat(b);
+  });
 }
-console.log(flattenArray([1, 2], [3, 4], [5, 6, 7]));
+console.log(flattenArray([[1, 2], [3, 4], [5, 6], [7]]));
