@@ -455,12 +455,17 @@
 // }
 // console.log(flattenArray([[1, 2], [3, 4], [5, 6], [7]]));
 /////////////////////
-function isAnagram(str1, str2) {
-  return formatString(str1) === formatString(str2);
+// function isAnagram(str1, str2) {
+//   return formatString(str1) === formatString(str2);
 
-  // helper function
-  function formatString(str) {
-    return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
-  }
+//   // helper function
+//   function formatString(str) {
+//     return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
+//   }
+// }
+// console.log(isAnagram("below", "elbow"));
+//////////////////
+function letterChanges(str) {
+  return letterChanges;
 }
-console.log(isAnagram("below", "elbow"));
+console.log(letterChanges("Hello there"));
