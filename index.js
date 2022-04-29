@@ -590,15 +590,24 @@
 // }
 // console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3));
 /////////////////////
-function flattenedArray(arrays) {
-  return arrays.reduce(function (a, b) {
-    return a.concat(b);
-  });
+// function flattenedArray(arrays) {
+//   return arrays.reduce(function (a, b) {
+//     return a.concat(b);
+//   });
+// }
+// console.log(
+//   flattenedArray([
+//     [1, 2],
+//     [3, 4],
+//     [5, 6, 7],
+//   ])
+// );
+//////////////////////////
+function isAnagram(str1, str2) {
+  return formatString(str1) === formatString(str2);
+  // helper function
+  function formatString(str) {
+    return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
+  }
 }
-console.log(
-  flattenedArray([
-    [1, 2],
-    [3, 4],
-    [5, 6, 7],
-  ])
-);
+console.log(isAnagram("hello", "olleh"));
