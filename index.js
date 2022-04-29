@@ -528,8 +528,14 @@
 // }
 // console.log(reversedString("hello"));
 //////////////
-function isPalindrome(str) {
-  let newWordArray = str.split("").reverse().join("");
-  return newWordArray === str;
+// function isPalindrome(str) {
+//   let newWordArray = str.split("").reverse().join("");
+//   return newWordArray === str;
+// }
+// console.log(isPalindrome("madams"));
+////////////////////
+function reversedInt(int) {
+  let newInt = int.toString().split("").reverse().join("");
+  return parseInt(newInt);
 }
-console.log(isPalindrome("madams"));
+console.log(reversedInt(712));
