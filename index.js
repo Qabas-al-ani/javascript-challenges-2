@@ -465,17 +465,21 @@
 // }
 // console.log(isAnagram("below", "elbow"));
 //////////////////
-function letterChanges(str) {
-  let newStr = str.replace(/[a-z]/gi, function (char) {
-    if (char === "z" || char === "Z") {
-      return "A";
-    } else {
-      return String.fromCharCode(char.charCodeAt() + 1);
-    }
-  });
-  newStr = newStr.replace(/a|e|o|u|i/gi, function (vowel) {
-    return vowel.toUpperCase();
-  });
-  return newStr;
+// function letterChanges(str) {
+//   let newStr = str.replace(/[a-z]/gi, function (char) {
+//     if (char === "z" || char === "Z") {
+//       return "A";
+//     } else {
+//       return String.fromCharCode(char.charCodeAt() + 1);
+//     }
+//   });
+//   newStr = newStr.replace(/a|e|o|u|i/gi, function (vowel) {
+//     return vowel.toUpperCase();
+//   });
+//   return newStr;
+// }
+// console.log(letterChanges("Hello there"));
+/////////////////////
+function addAll() {
+  return add;
 }
-console.log(letterChanges("Hello there"));
