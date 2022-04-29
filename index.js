@@ -540,17 +540,38 @@
 // }
 // console.log(reversedInt(712));
 //////////////////////
-function fizzBuzz() {
-  for (let i = 1; i < 100; i++) {
-    if (i % 15 === 0) {
-      console.log("Fizz Buzz");
-    } else if (i % 3 === 0) {
-      console.log("Fizz");
-    } else if (i % 5 === 0) {
-      console.log("Buzz");
-    } else {
-      console.log(i);
-    }
+// function fizzBuzz() {
+//   for (let i = 1; i < 100; i++) {
+//     if (i % 15 === 0) {
+//       console.log("Fizz Buzz");
+//     } else if (i % 3 === 0) {
+//       console.log("Fizz");
+//     } else if (i % 5 === 0) {
+//       console.log("Buzz");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
+// console.log(fizzBuzz(100));
+////////////////////////
+function longestWordArray(sen) {
+  // clean the array
+  let cleanArr = sen.toLowerCase().match(/[a-z0-9]+/g);
+  // sort the array
+  let sorted = cleanArr.sort(function (a, b) {
+    return b.length - a.length;
+  });
+  // if multiple words put into an array
+  let oneWordArray = sorted.filter(function (word) {
+    return word.length === sorted[0].length;
+  });
+
+  // if more than one value
+  if (oneWordArray.length === 1) {
+    return oneWordArray[0];
+  } else {
+    return oneWordArray;
   }
 }
-console.log(fizzBuzz(100));
+console.log(longestWordArray("Helloo, My name is Qabas"));
