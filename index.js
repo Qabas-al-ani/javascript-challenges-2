@@ -523,7 +523,13 @@
 // }
 // console.log(seekAndDestroy([1, 2, 3, 4, 5, 6, "hello"], 1, 2, 6));
 ////////////////
-function reversedString(str) {
-  return str.split("").reverse().join("");
+// function reversedString(str) {
+//   return str.split("").reverse().join("");
+// }
+// console.log(reversedString("hello"));
+//////////////
+function isPalindrome(str) {
+  let newWordArray = str.split("").reverse().join("");
+  return newWordArray === str;
 }
-console.log(reversedString("hello"));
+console.log(isPalindrome("madams"));
