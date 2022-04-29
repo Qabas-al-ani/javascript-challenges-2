@@ -513,7 +513,12 @@
 // }
 // console.log(allPrimes(10));
 //////////////////////
-function seekAndDestroy() {
-  return seekAnd;
+function seekAndDestroy(arr) {
+  const args = Array.from(arguments);
+
+  function filterArray(arr) {
+    return args.indexOf(arr) === -1;
+  }
+  return arr.filter(filterArray);
 }
-console.log(seekAndDestroy([1, 2, 3, 4, 5, "hello", 2, 6]));
+console.log(seekAndDestroy([1, 2, 3, 4, 5, 6, "hello"], 1, 2, 6));
