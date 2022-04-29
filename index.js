@@ -480,14 +480,19 @@
 // }
 // console.log(letterChanges("Hello there"));
 /////////////////////
-function addAll(...numbers) {
-  // var args = Array.prototype.slice.call(arguments);
-  // var total = 0;
-  // for (let i = 0; i < args.length; i++) {
-  //   total += args[i];
-  // }
-  // return total;
-  //////////////////////////
-  return numbers.reduce((acc, cur) => acc + cur);
+// function addAll(...numbers) {
+//   // var args = Array.prototype.slice.call(arguments);
+//   // var total = 0;
+//   // for (let i = 0; i < args.length; i++) {
+//   //   total += args[i];
+//   // }
+//   // return total;
+//   //////////////////////////
+//   return numbers.reduce((acc, cur) => acc + cur);
+// }
+// console.log(addAll(1, 2, 3));
+////////////////////////////
+function allPrimes() {
+  return allPrimes;
 }
-console.log(addAll(1, 2, 3));
+console.log(allPrimes(100));
