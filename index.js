@@ -576,16 +576,29 @@
 // }
 // console.log(longestWordArray("Helloo, My name is Qabas"));
 //////////////////
-function chunkedArray(arr, len) {
-  // init chunked array
-  let chunked = [];
-  // set index
-  let i = 0;
-  // loop through while the i is less than the length of the array
-  while (i < arr.length) {
-    chunked.push(arr.slice(i, i + len));
-    i += len;
-  }
-  return chunked;
+// function chunkedArray(arr, len) {
+//   // init chunked array
+//   let chunked = [];
+//   // set index
+//   let i = 0;
+//   // loop through while the i is less than the length of the array
+//   while (i < arr.length) {
+//     chunked.push(arr.slice(i, i + len));
+//     i += len;
+//   }
+//   return chunked;
+// }
+// console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3));
+/////////////////////
+function flattenedArray(arrays) {
+  return arrays.reduce(function (a, b) {
+    return a.concat(b);
+  });
 }
-console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3));
+console.log(
+  flattenedArray([
+    [1, 2],
+    [3, 4],
+    [5, 6, 7],
+  ])
+);
