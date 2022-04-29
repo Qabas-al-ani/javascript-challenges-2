@@ -555,23 +555,37 @@
 // }
 // console.log(fizzBuzz(100));
 ////////////////////////
-function longestWordArray(sen) {
-  // clean the array
-  let cleanArr = sen.toLowerCase().match(/[a-z0-9]+/g);
-  // sort the array
-  let sorted = cleanArr.sort(function (a, b) {
-    return b.length - a.length;
-  });
-  // if multiple words put into an array
-  let oneWordArray = sorted.filter(function (word) {
-    return word.length === sorted[0].length;
-  });
+// function longestWordArray(sen) {
+//   // clean the array
+//   let cleanArr = sen.toLowerCase().match(/[a-z0-9]+/g);
+//   // sort the array
+//   let sorted = cleanArr.sort(function (a, b) {
+//     return b.length - a.length;
+//   });
+//   // if multiple words put into an array
+//   let oneWordArray = sorted.filter(function (word) {
+//     return word.length === sorted[0].length;
+//   });
 
-  // if more than one value
-  if (oneWordArray.length === 1) {
-    return oneWordArray[0];
-  } else {
-    return oneWordArray;
+//   // if more than one value
+//   if (oneWordArray.length === 1) {
+//     return oneWordArray[0];
+//   } else {
+//     return oneWordArray;
+//   }
+// }
+// console.log(longestWordArray("Helloo, My name is Qabas"));
+//////////////////
+function chunkedArray(arr, len) {
+  // init chunked array
+  let chunked = [];
+  // set index
+  let i = 0;
+  // loop through while the i is less than the length of the array
+  while (i < arr.length) {
+    chunked.push(arr.slice(i, i + len));
+    i += len;
   }
+  return chunked;
 }
-console.log(longestWordArray("Helloo, My name is Qabas"));
+console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3));
