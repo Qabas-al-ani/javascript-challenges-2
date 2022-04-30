@@ -648,7 +648,10 @@
 // }
 // console.log(allPrimes(100));
 ///////////////
-function seekAndDestroy(arr, ...rest) {
-  return arr.filter(val => !rest.includes(val));
-}
-console.log(seekAndDestroy([2, 3, 4, 6, 6, "hello"], 2, 6));
+// function seekAndDestroy(arr, ...rest) {
+//   return arr.filter(val => !rest.includes(val));
+// }
+// console.log(seekAndDestroy([2, 3, 4, 6, 6, "hello"], 2, 6));
+/////////////////////////
+function sortByHeight(arr) {}
+console.log(SortByHeight([-1, 150, 160, 170, -1, -1, 180, 190]));
