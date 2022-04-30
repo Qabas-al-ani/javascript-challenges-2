@@ -653,19 +653,22 @@
 // }
 // console.log(seekAndDestroy([2, 3, 4, 6, 6, "hello"], 2, 6));
 /////////////////////////
-function sortByHeight(arr) {
-  let arr1 = [];
-  let arr2 = [];
+// function sortByHeight(arr) {
+//   let arr1 = [];
+//   let arr2 = [];
 
-  arr.forEach((val, i) => {
-    if (val === -1) {
-      arr.push(i);
-    } else {
-      arr2.push(val);
-    }
-  });
-  let sortedArr = arr.sort((a, b) => a - b);
-  arr1.forEach((val, i) => sortedArr.splice(arr1[i], 0, -1));
-  return sortedArr;
-}
-console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 180, 160]));
+//   arr.forEach((val, i) => {
+//     if (val === -1) {
+//       arr.push(i);
+//     } else {
+//       arr2.push(val);
+//     }
+//   });
+//   let sortedArr = arr.sort((a, b) => a - b);
+//   arr1.forEach((val, i) => sortedArr.splice(arr1[i], 0, -1));
+//   return sortedArr;
+// }
+// console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 180, 160]));
+//////////////////////
+function missingLetter() {}
+console.log(missingLetter("abcdeghigklmnopqrstuvewxyz"));
