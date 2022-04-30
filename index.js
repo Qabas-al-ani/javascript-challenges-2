@@ -615,15 +615,18 @@
 // function letterChanges(str) {}
 // console.log(letterChanges("hello there"));
 ///////////////
-function addAll(...numbers) {
-  //   return numbers.reduce(function (a, b) {
-  //     return a + b;
-  //   });
-  ///////////////////
-  let total = 0;
-  numbers.forEach(function (num) {
-    return (total += num);
-  });
-  return total;
-}
-console.log(addAll(1, 2, 3));
+// function addAll(...numbers) {
+//   //   return numbers.reduce(function (a, b) {
+//   //     return a + b;
+//   //   });
+//   ///////////////////
+//   let total = 0;
+//   numbers.forEach(function (num) {
+//     return (total += num);
+//   });
+//   return total;
+// }
+// console.log(addAll(1, 2, 3));
+////////////////////////////
+function allPrimes() {}
+console.log(allPrimes(10));
