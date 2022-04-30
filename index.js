@@ -648,5 +648,7 @@
 // }
 // console.log(allPrimes(100));
 ///////////////
-function seekAndDestroy() {}
+function seekAndDestroy(arr, ...rest) {
+  return arr.filter(val => !rest.includes(val));
+}
 console.log(seekAndDestroy([2, 3, 4, 6, 6, "hello"], 2, 6));
