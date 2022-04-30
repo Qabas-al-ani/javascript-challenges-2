@@ -628,22 +628,25 @@
 // }
 // console.log(addAll(1, 2, 3));
 ////////////////////////////
-function allPrimes(num) {
-  let total = 0;
+// function allPrimes(num) {
+//   let total = 0;
 
-  function isPrime(i) {
-    for (let j = 2; j < i; j++) {
-      if (i % j === 0) {
-        return false;
-      }
-    }
-    return true;
-  }
-  for (let i = 2; i <= num; i++) {
-    if (isPrime(i)) {
-      total += i;
-    }
-  }
-  return total;
-}
-console.log(allPrimes(100));
+//   function isPrime(i) {
+//     for (let j = 2; j < i; j++) {
+//       if (i % j === 0) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
+//   for (let i = 2; i <= num; i++) {
+//     if (isPrime(i)) {
+//       total += i;
+//     }
+//   }
+//   return total;
+// }
+// console.log(allPrimes(100));
+///////////////
+function seekAndDestroy() {}
+console.log(seekAndDestroy([2, 3, 4, 6, 6, "hello"], 2, 6));
