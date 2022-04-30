@@ -615,5 +615,9 @@
 // function letterChanges(str) {}
 // console.log(letterChanges("hello there"));
 ///////////////
-function addAll() {}
+function addAll(...numbers) {
+  return numbers.reduce(function (a, b) {
+    return a + b;
+  });
+}
 console.log(addAll(1, 2, 3));
