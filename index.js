@@ -612,5 +612,8 @@
 // }
 // console.log(isAnagram("hello", "olleh"));
 ////////////////////////////////
-function letterChanges(str) {}
-console.log(letterChanges("hello there"));
+// function letterChanges(str) {}
+// console.log(letterChanges("hello there"));
+///////////////
+function addAll() {}
+console.log(addAll(1, 2, 3));
