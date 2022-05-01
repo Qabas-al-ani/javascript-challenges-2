@@ -670,17 +670,26 @@
 // }
 // console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 180, 160]));
 //////////////////////
-function missingLetter(str) {
-  let compare = str.charCodeAt(0);
-  let missing;
+// function missingLetter(str) {
+//   let compare = str.charCodeAt(0);
+//   let missing;
 
-  str.split("").map((char, i) => {
-    if (str.charCodeAt(i) === compare) {
-      compare++;
-    } else {
-      missing = String.fromCharCode(compare);
-    }
-  });
-  return missing;
+//   str.split("").map((char, i) => {
+//     if (str.charCodeAt(i) === compare) {
+//       compare++;
+//     } else {
+//       missing = String.fromCharCode(compare);
+//     }
+//   });
+//   return missing;
+// }
+// console.log(missingLetter("abcdeghigklmnopqrstuvewxyz"));
+////////////////////////
+function evenOddNum(arr) {
+  let evenNum = 0;
+  let oddNum = 0;
+
+  arr.forEach(num => (num % 2 === 0 ? (evenNum += num) : (oddNum += num)));
+  return [evenNum, oddNum];
 }
-console.log(missingLetter("abcdeghigklmnopqrstuvewxyz"));
+console.log(evenOddNum([50, 60, 60, 45, 71]));
