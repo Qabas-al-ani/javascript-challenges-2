@@ -685,11 +685,14 @@
 // }
 // console.log(missingLetter("abcdeghigklmnopqrstuvewxyz"));
 ////////////////////////
-function evenOddNum(arr) {
-  let evenNum = 0;
-  let oddNum = 0;
+// function evenOddNum(arr) {
+// //   let evenNum = 0;
+// //   let oddNum = 0;
 
-  arr.forEach(num => (num % 2 === 0 ? (evenNum += num) : (oddNum += num)));
-  return [evenNum, oddNum];
-}
-console.log(evenOddNum([50, 60, 60, 45, 71]));
+// //   arr.forEach(num => (num % 2 === 0 ? (evenNum += num) : (oddNum += num)));
+// //   return [evenNum, oddNum];
+// // }
+// // console.log(evenOddNum([50, 60, 60, 45, 71]));
+/////////////////
+function repeatedLetter(str) {}
+console.log(repeatedLetter("javascript is great"));
