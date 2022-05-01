@@ -694,5 +694,23 @@
 // // }
 // // console.log(evenOddNum([50, 60, 60, 45, 71]));
 /////////////////
-function repeatedLetter(str) {}
-console.log(repeatedLetter("javascript is great"));
+function repeatedLetter(str) {
+  let charMap = {};
+  let maxNum = 0;
+  let maxChar = "";
+  str.split("").forEach(char => {
+    if (charMap[char]) {
+      charMap[char]++;
+    } else {
+      charMap[char] = 1;
+    }
+  });
+  for (let char in charMap) {
+    if (charMap[char] > maxNum) {
+      maxNum = charMap[char];
+      maxChar = char;
+    }
+  }
+  return maxChar;
+}
+console.log(repeatedLetter("javascript is not supported"));
