@@ -694,23 +694,44 @@
 // // }
 // // console.log(evenOddNum([50, 60, 60, 45, 71]));
 /////////////////
-function repeatedLetter(str) {
-  let charMap = {};
-  let maxNum = 0;
-  let maxChar = "";
-  str.split("").forEach(char => {
-    if (charMap[char]) {
-      charMap[char]++;
-    } else {
-      charMap[char] = 1;
-    }
-  });
-  for (let char in charMap) {
-    if (charMap[char] > maxNum) {
-      maxNum = charMap[char];
-      maxChar = char;
-    }
-  }
-  return maxChar;
-}
-console.log(repeatedLetter("javascript is not supported"));
+// function repeatedLetter(str) {
+//   let charMap = {};
+//   let maxNum = 0;
+//   let maxChar = "";
+//   str.split("").forEach(char => {
+//     // if (charMap[char]) {
+//     //   charMap[char]++;
+//     // } else {
+//     //   charMap[char] = 1;
+//     // }
+//     charMap[char] = charMap[char] ? charMap[char] + 1 : 1;
+//   });
+//   for (let char in charMap) {
+//     if (charMap[char] > maxNum) {
+//       maxNum = charMap[char];
+//       maxChar = char;
+//     }
+//   }
+//   return maxChar;
+// }
+// console.log(repeatedLetter("javascriptssssssssss"));
+//////////////////////////// second solution //////////////////////////////
+//     let newArr1 = str.split(" ");
+
+//     newArr1 = newArr1.map(item => {
+//       let newItem = item.toLowerCase().split("");
+//       return newItem.reduce(
+//         (acc, cur) => {
+//           acc[cur] = acc[cur] ? acc[cur] + 1 : 1;
+//           return acc;
+//         },
+//         { max: 1, word: item }
+//       );
+//     });
+//     return newArr1;
+// }
+
+// ////////////////
+
+function capitalizeLetter(str) {}
+console.log(capitalizeLetter("qabas aL aNI"));
