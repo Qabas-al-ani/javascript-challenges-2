@@ -733,5 +733,14 @@
 
 // ////////////////
 
-function capitalizeLetter(str) {}
+function capitalizeLetter(str) {
+  let newWord = str.toLowerCase().split(" ");
+
+  for (let i = 0; i < newWord.length; i++) {
+    newWord[i] =
+      newWord[i].substring(0, 1).toUpperCase() + newWord[i].substring(1);
+  }
+
+  return newWord.join(" ");
+}
 console.log(capitalizeLetter("qabas aL aNI"));
