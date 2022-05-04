@@ -733,16 +733,35 @@
 
 // ////////////////
 
-function capitalizeLetter(str) {
-  let newWord = str.toLowerCase().split(" ");
+// function capitalizeLetter(str) {
+//   let newWord = str.toLowerCase().split(" ");
 
-  for (let i = 0; i < newWord.length; i++) {
-    newWord[i] =
-      newWord[i].substring(0, 1).toUpperCase() + newWord[i].substring(1);
-  }
+//   for (let i = 0; i < newWord.length; i++) {
+//     newWord[i] =
+//       newWord[i].substring(0, 1).toUpperCase() + newWord[i].substring(1);
+//   }
 
-  return newWord.join(" ");
-}
-console.log(capitalizeLetter("qabas aL aNI"));
+//   return newWord.join(" ");
+// }
+// console.log(capitalizeLetter("qabas aL aNI"));
 
 /////////////////////
+function longestWordArray(sen) {
+  // clean the array
+  let cleanArr = sen.toLowerCase().match(/[a-z0-9]+/g);
+  // sort the array
+  let sorted = cleanArr.sort(function (a, b) {
+    return b.length - a.length;
+  });
+  // if multiple words put into an array
+  let oneWordArray = sorted.filter(function (word) {
+    return word.length === sorted[0].length;
+  });
+
+  // if more than one value
+  if (oneWordArray.length === 1) {
+    return oneWordArray[0];
+  } else {
+    return oneWordArray;
+  }
+}
