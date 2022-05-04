@@ -744,3 +744,5 @@ function capitalizeLetter(str) {
   return newWord.join(" ");
 }
 console.log(capitalizeLetter("qabas aL aNI"));
+
+/////////////////////
