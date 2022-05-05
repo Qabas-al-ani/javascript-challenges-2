@@ -779,5 +779,20 @@
 //   }
 // }
 ///////////////////
-function birthdayCakeCandles(candles) {}
-console.log(birthdayCakeCandles());
+function birthdayCakeCandles(candles) {
+  let max = 0;
+  let count = 0;
+
+  for (let i = 0; i < candles.length; i++) {
+    if (max < candles[i]) {
+      max = candles[i];
+    }
+  }
+  for (let i = 0; i < candles.length; i++) {
+    if (max === candles[i]) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(birthdayCakeCandles(24));
