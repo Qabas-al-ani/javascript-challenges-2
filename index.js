@@ -746,22 +746,24 @@
 // console.log(capitalizeLetter("qabas aL aNI"));
 
 /////////////////////
-function longestWordArray(sen) {
-  // clean the array
-  let cleanArr = sen.toLowerCase().match(/[a-z0-9]+/g);
-  // sort the array
-  let sorted = cleanArr.sort(function (a, b) {
-    return b.length - a.length;
-  });
-  // if multiple words put into an array
-  let oneWordArray = sorted.filter(function (word) {
-    return word.length === sorted[0].length;
-  });
+// function longestWordArray(sen) {
+//   // clean the array
+//   let cleanArr = sen.toLowerCase().match(/[a-z0-9]+/g);
+//   // sort the array
+//   let sorted = cleanArr.sort(function (a, b) {
+//     return b.length - a.length;
+//   });
+//   // if multiple words put into an array
+//   let oneWordArray = sorted.filter(function (word) {
+//     return word.length === sorted[0].length;
+//   });
 
-  // if more than one value
-  if (oneWordArray.length === 1) {
-    return oneWordArray[0];
-  } else {
-    return oneWordArray;
-  }
-}
+//   // if more than one value
+//   if (oneWordArray.length === 1) {
+//     return oneWordArray[0];
+//   } else {
+//     return oneWordArray;
+//   }
+// }
+function letterChanges(str) {}
+console.log(letterChanges("hello there"));
