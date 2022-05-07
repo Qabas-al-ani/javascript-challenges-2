@@ -779,20 +779,43 @@
 //   }
 // }
 ///////////////////
-function birthdayCakeCandles(candles) {
-  let max = 0;
-  let count = 0;
+// function birthdayCakeCandles(candles) {
+//   let max = 0;
+//   let count = 0;
 
-  for (let i = 0; i < candles.length; i++) {
-    if (max < candles[i]) {
-      max = candles[i];
+//   for (let i = 0; i < candles.length; i++) {
+//     if (max < candles[i]) {
+//       max = candles[i];
+//     }
+//   }
+//   for (let i = 0; i < candles.length; i++) {
+//     if (max === candles[i]) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(birthdayCakeCandles(24));
+// Challenge 6 unique item using (Set())
+// Solution
+
+function unique(str) {
+  Solution one
+    let tempStr = new Set();
+
+    for (let letter of str) {
+      if (tempStr.has(letter)) {
+        return false;
+      }
+      tempStr.add(letter);
     }
-  }
-  for (let i = 0; i < candles.length; i++) {
-    if (max === candles[i]) {
-      count++;
-    }
-  }
-  return count;
+    return true;
+
+  ///////////////////////
+  Solution two
+    to check if there's duplicate
+
+  return new Set(str).size === str.length;
+
+console.log(unique("abcdeaa"));
 }
-console.log(birthdayCakeCandles(24));
