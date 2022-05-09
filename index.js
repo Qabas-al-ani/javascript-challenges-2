@@ -822,5 +822,8 @@
 //     }
 //     return true;
 ///////////////////////
-function isPalindrome(str) {}
+function isPalindrome(str) {
+  let wordArr = str.split("").reverse().join("");
+  return wordArr === str;
+}
 console.log(isPalindrome("madam"));
