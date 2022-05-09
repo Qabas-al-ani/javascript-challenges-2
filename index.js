@@ -799,19 +799,9 @@
 // Challenge 6 unique item using (Set())
 // Solution
 
-function unique(str) {
-  Solution one
-    let tempStr = new Set();
+// cd
 
-    for (let letter of str) {
-      if (tempStr.has(letter)) {
-        return false;
-      }
-      tempStr.add(letter);
-    }
-    return true;
-
-  ///////////////////////
+///////////////////////
 //   Solution two
 //     to check if there's duplicate
 
@@ -820,14 +810,17 @@ function unique(str) {
 // console.log(unique("abcdeaa"));
 // }
 /////////////////////////////
-function unique(str) {
-  Solution one
-    let tempStr = new Set();
+// function unique(str) {
+//   Solution one
+//     let tempStr = new Set();
 
-    for (let letter of str) {
-      if (tempStr.has(letter)) {
-        return false;
-      }
-      tempStr.add(letter);
-    }
-    return true;
+//     for (let letter of str) {
+//       if (tempStr.has(letter)) {
+//         return false;
+//       }
+//       tempStr.add(letter);
+//     }
+//     return true;
+///////////////////////
+function isPalindrome(str) {}
+console.log(isPalindrome("madam"));
