@@ -821,9 +821,12 @@
 //       tempStr.add(letter);
 //     }
 //     return true;
-///////////////////////
-function isPalindrome(str) {
-  let wordArr = str.split("").reverse().join("");
-  return wordArr === str;
-}
+// ///////////////////////
+// function isPalindrome(str) {
+//   let wordArr = str.split("").reverse().join("");
+//   return wordArr === str;
+// }
+// console.log(isPalindrome("madam"));
+////////////////////////////////
+function isPalindrome(str) {}
 console.log(isPalindrome("madam"));
