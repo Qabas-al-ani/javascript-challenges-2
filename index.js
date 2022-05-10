@@ -840,5 +840,9 @@
 // }
 // console.log(reverseString("qabas"));
 /////////////////////
-function reversedInt(int) {}
-console.log(reversedInt(12345));
+function reversedInt(int) {
+  let newInt = int.toString().split("").reverse().join("");
+
+  return parseInt(newInt) * Math.sign(int);
+}
+console.log(reversedInt(-12345));
