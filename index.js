@@ -835,5 +835,7 @@
 // console.log(isPalindrome("madam"));
 //////////////////
 
-function reverseString(str) {}
+function reverseString(str) {
+  return str.replace().split("").reverse().join("");
+}
 console.log(reverseString("qabas"));
