@@ -880,18 +880,21 @@
 // }
 // console.log(maxCharacter("qabas"));
 //////////////////////
-function longestWord(sen) {
-  const wordArr = sen.toLowerCase().match(/[a-z0-9]+/g);
-  const sortedArr = wordArr.sort(function (a, b) {
-    return b.length - a.length;
-  });
-  const filteredArr = sortedArr.filter(function (word) {
-    return word.length === sortedArr[0].length;
-  });
-  if (filteredArr.length === 1) {
-    return filteredArr[0];
-  } else {
-    filteredArr;
-  }
-}
-console.log(longestWord("qabas, al, ani is a, pathetic"));
+// function longestWord(sen) {
+//   const wordArr = sen.toLowerCase().match(/[a-z0-9]+/g);
+//   const sortedArr = wordArr.sort(function (a, b) {
+//     return b.length - a.length;
+//   });
+//   const filteredArr = sortedArr.filter(function (word) {
+//     return word.length === sortedArr[0].length;
+//   });
+//   if (filteredArr.length === 1) {
+//     return filteredArr[0];
+//   } else {
+//     filteredArr;
+//   }
+// }
+// console.log(longestWord("qabas, al, ani is a, pathetic"));
+//////////////////////////
+function chunkedArray(arr, length) {}
+console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8], 4));
