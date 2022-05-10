@@ -840,9 +840,12 @@
 // }
 // console.log(reverseString("qabas"));
 /////////////////////
-function reversedInt(int) {
-  let newInt = int.toString().split("").reverse().join("");
+// function reversedInt(int) {
+//   let newInt = int.toString().split("").reverse().join("");
 
-  return parseInt(newInt) * Math.sign(int);
-}
-console.log(reversedInt(-12345));
+//   return parseInt(newInt) * Math.sign(int);
+// }
+// console.log(reversedInt(-12345));
+/////////////////////
+function capitalizeLetter(str) {}
+console.log(capitalizeLetter("qaBAs aL ani"));
