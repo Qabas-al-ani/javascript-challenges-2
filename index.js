@@ -835,7 +835,10 @@
 // console.log(isPalindrome("madam"));
 //////////////////
 
-function reverseString(str) {
-  return str.replace().split("").reverse().join("");
-}
-console.log(reverseString("qabas"));
+// function reverseString(str) {
+//   return str.replace().split("").reverse().join("");
+// }
+// console.log(reverseString("qabas"));
+/////////////////////
+function reversedInt(int) {}
+console.log(reversedInt(12345));
