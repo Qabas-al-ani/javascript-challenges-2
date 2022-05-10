@@ -896,13 +896,16 @@
 // }
 // console.log(longestWord("qabas, al, ani is a, pathetic"));
 //////////////////////////
-function chunkedArray(arr, len) {
-  const newChunks = [];
-  let i = 0;
-  while (i < arr.length) {
-    newChunks.push(arr.slice(i, i + len));
-    i += len;
-  }
-  return newChunks;
-}
-console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8], 2));
+// function chunkedArray(arr, len) {
+//   const newChunks = [];
+//   let i = 0;
+//   while (i < arr.length) {
+//     newChunks.push(arr.slice(i, i + len));
+//     i += len;
+//   }
+//   return newChunks;
+// }
+// console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8], 2));
+//////////////////////////
+function flattenArr(arrays) {}
+console.log(flattenArr([1, 2], [3, 4], [5, 6, 7], [8]));
