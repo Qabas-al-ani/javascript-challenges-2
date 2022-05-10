@@ -828,5 +828,8 @@
 // }
 // console.log(isPalindrome("madam"));
 ////////////////////////////////
-function isPalindrome(str) {}
+function isPalindrome(str) {
+  const strArr = str.split("").reverse().join("");
+  return strArr === str;
+}
 console.log(isPalindrome("madam"));
