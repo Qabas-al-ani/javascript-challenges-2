@@ -888,6 +888,10 @@ function longestWord(sen) {
   const filteredArr = sortedArr.filter(function (word) {
     return word.length === sortedArr[0].length;
   });
-  return filteredArr;
+  if (filteredArr.length === 1) {
+    return filteredArr[0];
+  } else {
+    filteredArr;
+  }
 }
 console.log(longestWord("qabas, al, ani is a, pathetic"));
