@@ -847,5 +847,14 @@
 // }
 // console.log(reversedInt(-12345));
 /////////////////////
-function capitalizeLetter(str) {}
+function capitalizeLetter(str) {
+  let strArr = str.toLowerCase().split(" ");
+
+  for (let i = 0; i < strArr.length; i++) {
+    strArr[i] =
+      strArr[i].substring(0, 1).toUpperCase() +
+      strArr[i].substring(1).toLowerCase();
+  }
+  return strArr.join(" ");
+}
 console.log(capitalizeLetter("qaBAs aL ani"));
