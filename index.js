@@ -933,10 +933,9 @@ function letterChanges(str) {
 console.log(letterChanges("hello there"));
 ///////////////////
 function letterChanges(str) {
-  // return formatString(str1) === formatString(str2);
-  // function formatString(str) {
-  //   return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
-  // }
-  //////////////////////////
+  return formatString(str1) === formatString(str2);
+  function formatString(str) {
+    return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
+  }
 }
 console.log(letterChanges("hello there"));
