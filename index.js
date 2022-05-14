@@ -940,4 +940,16 @@
 // }
 // console.log(letterChanges("hello there"));
 //////////////////////////////////
-function letterChanges(str) {}
+function letterChanges(str) {
+  // if multiple words put into an array
+  let oneWordArray = sorted.filter(function (word) {
+    return word.length === sorted[0].length;
+  });
+
+  //   // if more than one value
+  if (oneWordArray.length === 1) {
+    return oneWordArray[0];
+  } else {
+    return oneWordArray;
+  }
+}
