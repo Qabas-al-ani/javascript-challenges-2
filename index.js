@@ -940,16 +940,23 @@
 // }
 // console.log(letterChanges("hello there"));
 //////////////////////////////////
-function letterChanges(str) {
-  // if multiple words put into an array
-  let oneWordArray = sorted.filter(function (word) {
-    return word.length === sorted[0].length;
-  });
+// function letterChanges(str) {
+//   // if multiple words put into an array
+//   let oneWordArray = sorted.filter(function (word) {
+//     return word.length === sorted[0].length;
+//   });
 
-  //   // if more than one value
-  if (oneWordArray.length === 1) {
-    return oneWordArray[0];
-  } else {
-    return oneWordArray;
-  }
+//   //   // if more than one value
+//   if (oneWordArray.length === 1) {
+//     return oneWordArray[0];
+//   } else {
+//     return oneWordArray;
+//   }
+// }
+/////////////////////////
+function longestWord(str) {
+  const output = longestWord(
+    "Welcome to the 2U job board. Updated daily, we source these positions directly from hundreds of employer partners across a variety of industries. We work closely with partners to understand their hiring needs so we can best advocate for you, our 2U-powered program learners. If you have any questions, please contact"
+  );
 }
+console.log(output);
