@@ -1034,25 +1034,37 @@
 // }
 // console.log(reverseInt(-12345));
 /////////////////////
-function maxCharacter(str) {
-  let charMap = {};
-  let maxNum = 0;
-  let maxChar = "";
+// function maxCharacter(str) {
+//   let charMap = {};
+//   let maxNum = 0;
+//   let maxChar = "";
 
-  str.split("").forEach(function (char) {
-    if (charMap[char]) {
-      charMap[char]++;
-    } else {
-      charMap[char] = 1;
-    }
+//   str.split("").forEach(function (char) {
+//     if (charMap[char]) {
+//       charMap[char]++;
+//     } else {
+//       charMap[char] = 1;
+//     }
+//   });
+
+//   for (let char in charMap) {
+//     if (charMap[char] > maxNum) {
+//       maxNum = charMap[char];
+//       maxChar = char;
+//     }
+//   }
+//   return maxChar;
+// }
+// console.log(maxCharacter("qabas"));
+///////////////////////
+function longestWordArray(str) {
+  let newWord = str.toLowerCase().match(/[a-z0-9]+/g);
+  let sortedArray = newWord.sort(function (a, b) {
+    return b.length - a.length;
   });
-
-  for (let char in charMap) {
-    if (charMap[char] > maxNum) {
-      maxNum = charMap[char];
-      maxChar = char;
-    }
-  }
-  return maxChar;
+  let longestWord = sortedArray.filter(function (word) {
+    word.length === longestWord[0].length;
+  });
+  return longestWord;
 }
-console.log(maxCharacter("qabas"));
+console.log(longestWordArray("Hello, my name is Qabas"));
