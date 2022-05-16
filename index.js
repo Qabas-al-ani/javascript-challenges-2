@@ -1018,12 +1018,18 @@
 // }
 // console.log(reverseStr("qabas"));
 /////////////////
-function isPalindrome(str) {
-  const wordArray = str.split("").reverse().join("");
-  if (wordArray === str) {
-    return true;
-  } else {
-    return false;
-  }
+// function isPalindrome(str) {
+//   const wordArray = str.split("").reverse().join("");
+//   if (wordArray === str) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isPalindrome("madam"));
+///////////////////
+function reverseInt(int) {
+  let newInt = int.toString().split("").reverse().join("");
+  return parseInt(newInt) * Math.sign(int);
 }
-console.log(isPalindrome("madam"));
+console.log(reverseInt(-12345));
