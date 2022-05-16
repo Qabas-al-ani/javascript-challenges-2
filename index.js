@@ -1028,8 +1028,31 @@
 // }
 // console.log(isPalindrome("madam"));
 ///////////////////
-function reverseInt(int) {
-  let newInt = int.toString().split("").reverse().join("");
-  return parseInt(newInt) * Math.sign(int);
+// function reverseInt(int) {
+//   let newInt = int.toString().split("").reverse().join("");
+//   return parseInt(newInt) * Math.sign(int);
+// }
+// console.log(reverseInt(-12345));
+/////////////////////
+function maxCharacter(str) {
+  let charMap = {};
+  let maxNum = 0;
+  let maxChar = "";
+
+  str.split("").forEach(function (char) {
+    if (charMap[char]) {
+      charMap[char]++;
+    } else {
+      charMap[char] = 1;
+    }
+  });
+
+  for (let char in charMap) {
+    if (charMap[char] > maxNum) {
+      maxNum = charMap[char];
+      maxChar = char;
+    }
+  }
+  return maxChar;
 }
-console.log(reverseInt(-12345));
+console.log(maxCharacter("qabas"));
