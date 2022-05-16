@@ -1013,7 +1013,17 @@
 // }
 // console.log(maxCharacter("qabas"));
 //////////////////////////
-function reverseStr(str) {
-  return str.split("").reverse().join("");
+// function reverseStr(str) {
+//   return str.split("").reverse().join("");
+// }
+// console.log(reverseStr("qabas"));
+/////////////////
+function isPalindrome(str) {
+  const wordArray = str.split("").reverse().join("");
+  if (wordArray === str) {
+    return true;
+  } else {
+    return false;
+  }
 }
-console.log(reverseStr("qabas"));
+console.log(isPalindrome("madam"));
