@@ -1057,14 +1057,17 @@
 // }
 // console.log(maxCharacter("qabas"));
 ///////////////////////
-function longestWordArray(str) {
-  let newWord = str.toLowerCase().match(/[a-z0-9]+/g);
-  let sortedArray = newWord.sort(function (a, b) {
-    return b.length - a.length;
-  });
-  let longestWord = sortedArray.filter(function (word) {
-    word.length === longestWord[0].length;
-  });
-  return longestWord;
-}
+// function longestWordArray(str) {
+//   let newWord = str.toLowerCase().match(/[a-z0-9]+/g);
+//   let sortedArray = newWord.sort(function (a, b) {
+//     return b.length - a.length;
+//   });
+//   let longestWord = sortedArray.filter(function (word) {
+//     word.length === longestWord[0].length;
+//   });
+//   return longestWord;
+// }
+// console.log(longestWordArray("Hello, my name is Qabas"));
+//////////////////////
+function longestWordArray(str) {}
 console.log(longestWordArray("Hello, my name is Qabas"));
