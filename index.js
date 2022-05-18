@@ -1124,23 +1124,26 @@
 // }
 // console.log(birthdayCakeCandles(24));
 //////////////////
-function maxCharacter(str) {
-  const charMap = {};
-  let maxNum = 0;
-  let maxChar = "";
-  str.split("").forEach(function (char) {
-    if (charMap[char]) {
-      charMap[char]++;
-    } else {
-      charMap[char] = 1;
-    }
-  });
-  for (let char in charMap) {
-    if (charMap[char] > maxNum) {
-      maxNum = charMap[char];
-      maxChar = char;
-    }
-  }
-  return maxChar;
-}
-console.log(maxCharacter("qabas"));
+// function maxCharacter(str) {
+//   const charMap = {};
+//   let maxNum = 0;
+//   let maxChar = "";
+//   str.split("").forEach(function (char) {
+//     if (charMap[char]) {
+//       charMap[char]++;
+//     } else {
+//       charMap[char] = 1;
+//     }
+//   });
+//   for (let char in charMap) {
+//     if (charMap[char] > maxNum) {
+//       maxNum = charMap[char];
+//       maxChar = char;
+//     }
+//   }
+//   return maxChar;
+// }
+// console.log(maxCharacter("qabas"));
+/////////////////////////
+function isAnagram(str1, str2) {}
+console.log(isAnagram("hello", "olleh"));
