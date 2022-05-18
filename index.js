@@ -1081,10 +1081,16 @@
 // }
 // console.log(longestWordArray("Hello, my name is Qabas"));
 //////////////////////////////
-function letterChanges(str) {
-  return formatString(str1) === formatString(str2);
-  function formatString(str) {
-    return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
-  }
-}
-console.log(letterChanges("hello there"));
+// function letterChanges(str) {
+//   return formatString(str1) === formatString(str2);
+//   function formatString(str) {
+//     return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
+//   }
+// }
+// console.log(letterChanges("hello there"));
+//////////////////////////////
+function longestWord(str) {}
+const output = longestWord(
+  "Welcome to the 2U job board. Updated daily, we source these positions directly from hundreds of employer partners across a variety of industries. We work closely with partners to understand their hiring needs so we can best advocate for you, our 2U-powered program learners. If you have any questions, please contact"
+);
+console.log(output);
