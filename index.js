@@ -1264,7 +1264,10 @@
 // );
 // console.log(output);
 /////////////////////
-function reversedInt(int) {}
+function reversedInt(int) {
+  let newInt = int.toString().split("").reverse().join("");
+  return parseInt(newInt) * Math.sign(int);
+}
 console.log(reversedInt(-12345));
 /////////////////////
 // function capitalizeLetter(str) {
