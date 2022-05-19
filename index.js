@@ -1176,23 +1176,26 @@
 // }
 // console.log(repeatedLetter("javascriptssssssssss"));
 ///////////////////////////
-function maxCharacter(str) {
-  const charMap = {};
-  let maxNum = 0;
-  let maxChar = "";
-  str.split("").forEach(function (char) {
-    if (charMap[char]) {
-      charMap[char]++;
-    } else {
-      charMap[char] = 1;
-    }
-  });
-  for (let char in charMap) {
-    if (charMap[char] > maxNum) {
-      maxNum = charMap[char];
-      maxChar = char;
-    }
-  }
-  return maxChar;
-}
-console.log(maxCharacter("qabas"));
+// function maxCharacter(str) {
+//   const charMap = {};
+//   let maxNum = 0;
+//   let maxChar = "";
+//   str.split("").forEach(function (char) {
+//     if (charMap[char]) {
+//       charMap[char]++;
+//     } else {
+//       charMap[char] = 1;
+//     }
+//   });
+//   for (let char in charMap) {
+//     if (charMap[char] > maxNum) {
+//       maxNum = charMap[char];
+//       maxChar = char;
+//     }
+//   }
+//   return maxChar;
+// }
+// console.log(maxCharacter("qabas"));
+/////////////////////////
+function chunkedArray(arr, len) {}
+console.log(flattenArr([[1, 2], [3, 4], [5, 6, 7], [8]]));
