@@ -1216,5 +1216,19 @@
 // }
 // console.log(flattenArr([[1, 2], [3, 4], [5, 6, 7], [8]]));
 ///////////////////
-function sortByHeight(arr) {}
+function sortByHeight(arr) {
+  let arr1 = [];
+  let arr2 = [];
+
+  arr.forEach((val, i) => {
+    if (val === -1) {
+      arr.push(i);
+    } else {
+      arr2.push(val);
+    }
+  });
+  let sortedArr = arr.sort((a, b) => a - b);
+  arr1.forEach((val, i) => sortedArr.splice(arr1[i], 0, -1));
+  return sortedArr;
+}
 console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 180, 160]));
