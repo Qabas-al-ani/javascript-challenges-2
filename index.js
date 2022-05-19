@@ -1247,19 +1247,34 @@
 //   }
 // }
 /////////////////////////
-function longestWord(str) {
-  let words = str.split(" ");
-  let longestWord = "";
+// function longestWord(str) {
+//   let words = str.split(" ");
+//   let longestWord = "";
 
-  for (let word of words) {
-    if (word.length > longestWord.length) {
-      longestWord = word;
-    }
-  }
+//   for (let word of words) {
+//     if (word.length > longestWord.length) {
+//       longestWord = word;
+//     }
+//   }
 
-  return longestWord;
-}
-const output = longestWord(
-  "Welcome to the 2U job board. Updated daily, we source these positions directly from hundreds of employer partners across a variety of industries. We work closely with partners to understand their hiring needs so we can best advocate for you, our 2U-powered program learners. If you have any questions, please contact"
-);
-console.log(output);
+//   return longestWord;
+// }
+// const output = longestWord(
+//   "Welcome to the 2U job board. Updated daily, we source these positions directly from hundreds of employer partners across a variety of industries. We work closely with partners to understand their hiring needs so we can best advocate for you, our 2U-powered program learners. If you have any questions, please contact"
+// );
+// console.log(output);
+/////////////////////
+function reversedInt(int) {}
+console.log(reversedInt(-12345));
+/////////////////////
+// function capitalizeLetter(str) {
+//   let strArr = str.toLowerCase().split(" ");
+
+//   for (let i = 0; i < strArr.length; i++) {
+//     strArr[i] =
+//       strArr[i].substring(0, 1).toUpperCase() +
+//       strArr[i].substring(1).toLowerCase();
+//   }
+//   return strArr.join(" ");
+// }
+// console.log(capitalizeLetter("qaBAs aL ani"));
