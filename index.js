@@ -1264,20 +1264,11 @@
 // );
 // console.log(output);
 /////////////////////
-function reversedInt(int) {
-  let newInt = int.toString().split("").reverse().join("");
-  return parseInt(newInt) * Math.sign(int);
-}
-console.log(reversedInt(-12345));
-/////////////////////
-// function capitalizeLetter(str) {
-//   let strArr = str.toLowerCase().split(" ");
-
-//   for (let i = 0; i < strArr.length; i++) {
-//     strArr[i] =
-//       strArr[i].substring(0, 1).toUpperCase() +
-//       strArr[i].substring(1).toLowerCase();
-//   }
-//   return strArr.join(" ");
+// function reversedInt(int) {
+//   let newInt = int.toString().split("").reverse().join("");
+//   return parseInt(newInt) * Math.sign(int);
 // }
-// console.log(capitalizeLetter("qaBAs aL ani"));
+// console.log(reversedInt(-12345));
+/////////////////////
+function capitalizeLetter(str) {}
+console.log(capitalizeLetter("qaBAs aL ani"));
