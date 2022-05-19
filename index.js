@@ -1216,19 +1216,39 @@
 // }
 // console.log(flattenArr([[1, 2], [3, 4], [5, 6, 7], [8]]));
 ///////////////////
-function sortByHeight(arr) {
-  let arr1 = [];
-  let arr2 = [];
+// function sortByHeight(arr) {
+//   let arr1 = [];
+//   let arr2 = [];
 
-  arr.forEach((val, i) => {
-    if (val === -1) {
-      arr.push(i);
-    } else {
-      arr2.push(val);
-    }
-  });
-  let sortedArr = arr.sort((a, b) => a - b);
-  arr1.forEach((val, i) => sortedArr.splice(arr1[i], 0, -1));
-  return sortedArr;
-}
-console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 180, 160]));
+//   arr.forEach((val, i) => {
+//     if (val === -1) {
+//       arr.push(i);
+//     } else {
+//       arr2.push(val);
+//     }
+//   });
+//   let sortedArr = arr.sort((a, b) => a - b);
+//   arr1.forEach((val, i) => sortedArr.splice(arr1[i], 0, -1));
+//   return sortedArr;
+// }
+// console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 180, 160]));
+/////////////////////////
+// function letterChanges(str) {
+//   // if multiple words put into an array
+//   let oneWordArray = sorted.filter(function (word) {
+//     return word.length === sorted[0].length;
+//   });
+
+//   //   // if more than one value
+//   if (oneWordArray.length === 1) {
+//     return oneWordArray[0];
+//   } else {
+//     return oneWordArray;
+//   }
+// }
+/////////////////////////
+function longestWord(str) {}
+const output = longestWord(
+  "Welcome to the 2U job board. Updated daily, we source these positions directly from hundreds of employer partners across a variety of industries. We work closely with partners to understand their hiring needs so we can best advocate for you, our 2U-powered program learners. If you have any questions, please contact"
+);
+console.log(output);
