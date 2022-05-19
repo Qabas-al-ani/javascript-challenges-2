@@ -1197,5 +1197,14 @@
 // }
 // console.log(maxCharacter("qabas"));
 /////////////////////////
-function chunkedArray(arr, len) {}
-console.log(flattenArr([[1, 2], [3, 4], [5, 6, 7], [8]]));
+function chunkedArray(arr, len) {
+  const newChunks = [];
+  let i = 0;
+  while (i < arr.length) {
+    newChunks.push(arr.slice(i, i + len));
+    i += len;
+  }
+  return newChunks;
+}
+console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8], 2));
+////////////////////////
