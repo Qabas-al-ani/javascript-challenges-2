@@ -1209,9 +1209,12 @@
 // console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8], 2));
 // ////////////////////////
 //////////////////
-function flattenArr(arrays) {
-  return arrays.reduce(function (acc, curr) {
-    return acc.concat(curr);
-  });
-}
-console.log(flattenArr([[1, 2], [3, 4], [5, 6, 7], [8]]));
+// function flattenArr(arrays) {
+//   return arrays.reduce(function (acc, curr) {
+//     return acc.concat(curr);
+//   });
+// }
+// console.log(flattenArr([[1, 2], [3, 4], [5, 6, 7], [8]]));
+///////////////////
+function sortByHeight(arr) {}
+console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 180, 160]));
