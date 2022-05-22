@@ -1300,8 +1300,68 @@
 // }
 // console.log(capitalizeLetter("qaBAs aL ani"));
 //////////////////
-function reversedInt(int) {
-  let newInt = int.toString().split("").reverse().join("");
-  return parseInt(newInt) * Math.sign(int);
-}
-console.log(reversedInt(-12345));
+// function reversedInt(int) {
+//   let newInt = int.toString().split("").reverse().join("");
+//   return parseInt(newInt) * Math.sign(int);
+// }
+// console.log(reversedInt(-12345));
+//////////////////////////////////////////////////////////////////////
+// CHALLENGES ONE
+// COUNTING LETTERS JAVASCRIPT
+
+function longestWord(str) {}
+const output = longestWord(
+  "Welcome to the 2U job board. Updated daily, we source these positions directly from hundreds of employer partners across a variety of industries. We work closely with partners to understand their hiring needs so we can best advocate for you, our 2U-powered program learners. If you have any questions, please contact"
+);
+console.log(output);
+
+// CHALLENGE 2  MATH SEQUENCE
+// SOLUTION
+
+// function mathSequence(arr) {
+//   let arith = new Set();
+//   let geo = new Set();
+
+//   for (let i = 1; i < arr.length; i++) {
+//     let number1 = arr[i] - arr[i - 1];
+//     arith.add(number1);
+//     let number2 = arr[i] / arr[i - 1];
+//     geo.add(number2);
+//   }
+
+//   if (arith.size === 1) {
+//     return "Arithmetic";
+//   }
+//   if (geo.size === 1) {
+//     return "Geometry";
+//   }
+//   return -1;
+// }
+// console.log(mathSequence([2, 4, 6, 8]));
+
+////////////////
+// challenge 3 Longest word
+// SOLUTION
+
+// function longestWord(str) {
+//   let words = str.split(" ");
+//   let size = 0;
+//   let max = [""];
+
+//   for (let i = 0; i < words.length; i++) {
+//     if (words[i].length >= size) {
+//       size = words[i].length;
+
+//       if (max[max.length - 1].length < words[i].length) {
+//         max = [];
+//         max.push(words[i]);
+//       } else {
+//         max = [...max, words[i]];
+//       }
+//     }
+//   }
+
+//   return [...max];
+// }
+
+// console.log(longestWord("we source these positions directly from hundreds"));
