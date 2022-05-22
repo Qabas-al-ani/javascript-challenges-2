@@ -1329,50 +1329,31 @@
 // CHALLENGE 2  MATH SEQUENCE
 // SOLUTION
 
-function mathSequence(arr) {
-  let arith = new Set();
-  let geo = new Set();
+// function mathSequence(arr) {
+//   let arith = new Set();
+//   let geo = new Set();
 
-  for (let i = 1; i < arr.length; i++) {
-    let number1 = arr[i] - arr[i - 1];
-    arith.add(number1);
-    let number2 = arr[i] / arr[i - 1];
-    geo.add(number2);
-  }
+//   for (let i = 1; i < arr.length; i++) {
+//     let number1 = arr[i] - arr[i - 1];
+//     arith.add(number1);
+//     let number2 = arr[i] / arr[i - 1];
+//     geo.add(number2);
+//   }
 
-  if (arith.size === 1) {
-    return "Arithmetic";
-  }
-  if (geo.size === 1) {
-    return "Geometry";
-  }
-  return -1;
-}
-console.log(mathSequence([2, 4, 6, 8]));
+//   if (arith.size === 1) {
+//     return "Arithmetic";
+//   }
+//   if (geo.size === 1) {
+//     return "Geometry";
+//   }
+//   return -1;
+// }
+// console.log(mathSequence([2, 4, 6, 8]));
 
 ////////////////
 // challenge 3 Longest word
 // SOLUTION
 
-// function longestWord(str) {
-//   let words = str.split(" ");
-//   let size = 0;
-//   let max = [""];
+function longestWord(str) {}
 
-//   for (let i = 0; i < words.length; i++) {
-//     if (words[i].length >= size) {
-//       size = words[i].length;
-
-//       if (max[max.length - 1].length < words[i].length) {
-//         max = [];
-//         max.push(words[i]);
-//       } else {
-//         max = [...max, words[i]];
-//       }
-//     }
-//   }
-
-//   return [...max];
-// }
-
-// console.log(longestWord("we source these positions directly from hundreds"));
+console.log(longestWord("we source these positions directly from hundreds"));
