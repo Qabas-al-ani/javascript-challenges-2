@@ -1381,5 +1381,8 @@
 // }
 // console.log(reverseString("hello"));
 //////////////////////
-function isPalindrome(str) {}
-console.log(isPalindrome("racecar"));
+function isPalindrome(str) {
+  let newWordArr = str.split("").reverse().join("");
+  return newWordArr === str;
+}
+console.log(isPalindrome("qavas"));
