@@ -1376,7 +1376,10 @@
 // }
 
 // console.log(longestWord("we source these positions directly from hundreds"));
-function reverseString(str) {
-  return str.split("").reverse().join("");
-}
-console.log(reverseString("hello"));
+// function reverseString(str) {
+//   return str.split("").reverse().join("");
+// }
+// console.log(reverseString("hello"));
+//////////////////////
+function isPalindrome(str) {}
+console.log(isPalindrome("racecar"));
