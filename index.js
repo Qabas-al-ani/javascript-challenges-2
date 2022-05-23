@@ -1393,14 +1393,17 @@
 // }
 // console.log(reverseInt(12345));
 //////////////////////
-function capitalizeLetter(str) {
-  let newWord = str.toLowerCase().split(" ");
+// function capitalizeLetter(str) {
+//   let newWord = str.toLowerCase().split(" ");
 
-  for (let i = 0; i < newWord.length; i++) {
-    newWord[i] =
-      newWord[i].substring(0, 1).toUpperCase() +
-      newWord[i].substring(1).toLowerCase();
-  }
-  return newWord.join(" ");
-}
-console.log(capitalizeLetter("i love coding"));
+//   for (let i = 0; i < newWord.length; i++) {
+//     newWord[i] =
+//       newWord[i].substring(0, 1).toUpperCase() +
+//       newWord[i].substring(1).toLowerCase();
+//   }
+//   return newWord.join(" ");
+// }
+// console.log(capitalizeLetter("i love coding"));
+///////////////
+function maxCharacter(str) {}
+console.log(maxCharacter("qabas"));
