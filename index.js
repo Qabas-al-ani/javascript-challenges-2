@@ -1381,8 +1381,11 @@
 // }
 // console.log(reverseString("hello"));
 //////////////////////
-function isPalindrome(str) {
-  let newWordArr = str.split("").reverse().join("");
-  return newWordArr === str;
-}
-console.log(isPalindrome("qavas"));
+// function isPalindrome(str) {
+//   let newWordArr = str.split("").reverse().join("");
+//   return newWordArr === str;
+// }
+// console.log(isPalindrome("qavas"));
+///////////////////////
+function reverseInt(int) {}
+console.log(reverseInt(12345));
