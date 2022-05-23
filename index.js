@@ -1387,8 +1387,11 @@
 // }
 // console.log(isPalindrome("qavas"));
 ///////////////////////
-function reverseInt(int) {
-  let newInt = int.toString().split("").reverse().join("");
-  return parseInt(newInt);
-}
-console.log(reverseInt(12345));
+// function reverseInt(int) {
+//   let newInt = int.toString().split("").reverse().join("");
+//   return parseInt(newInt);
+// }
+// console.log(reverseInt(12345));
+//////////////////////
+function capitalizeLetter(str) {}
+console.log(capitalizeLetter("i love coding"));
