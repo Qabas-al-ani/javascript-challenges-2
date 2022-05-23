@@ -1354,25 +1354,29 @@
 // challenge 3 Longest word
 // SOLUTION
 
-function longestWord(str) {
-  let words = str.split(" ");
-  let size = 0;
-  let max = [""];
+// function longestWord(str) {
+//   let words = str.split(" ");
+//   let size = 0;
+//   let max = [""];
 
-  for (let i = 0; i < words.length; i++) {
-    if (words[i].length >= size) {
-      size = words[i].length;
+//   for (let i = 0; i < words.length; i++) {
+//     if (words[i].length >= size) {
+//       size = words[i].length;
 
-      if (max[max.length - 1].length < words[i].length) {
-        max = [];
-        max.push(words[i]);
-      } else {
-        max = [...max, words[i]];
-      }
-    }
-  }
+//       if (max[max.length - 1].length < words[i].length) {
+//         max = [];
+//         max.push(words[i]);
+//       } else {
+//         max = [...max, words[i]];
+//       }
+//     }
+//   }
 
-  return [...max];
+//   return [...max];
+// }
+
+// console.log(longestWord("we source these positions directly from hundreds"));
+function reverseString(str) {
+  return str.split("").reverse().join("");
 }
-
-console.log(longestWord("we source these positions directly from hundreds"));
+console.log(reverseString("hello"));
