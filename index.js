@@ -1387,5 +1387,8 @@
 // }
 // console.log(isPalindrome("qavas"));
 ///////////////////////
-function reverseInt(int) {}
+function reverseInt(int) {
+  let newInt = int.toString().split("").reverse().join("");
+  return parseInt(newInt);
+}
 console.log(reverseInt(12345));
