@@ -1405,24 +1405,27 @@
 // }
 // console.log(capitalizeLetter("i love coding"));
 ///////////////
-function maxCharacter(str) {
-  let charMap = {};
-  let maxNum = 0;
-  let maxChar = "";
+// function maxCharacter(str) {
+//   let charMap = {};
+//   let maxNum = 0;
+//   let maxChar = "";
 
-  str.split("").forEach(function (char) {
-    if (charMap[char]) {
-      charMap[char]++;
-    } else {
-      charMap[char] = 1;
-    }
-  });
-  for (let char in charMap) {
-    if (charMap[char] > maxNum) {
-      maxNum = charMap[char];
-      maxChar = char;
-    }
-    return maxChar;
-  }
-}
-console.log(maxCharacter("qabas"));
+//   str.split("").forEach(function (char) {
+//     if (charMap[char]) {
+//       charMap[char]++;
+//     } else {
+//       charMap[char] = 1;
+//     }
+//   });
+//   for (let char in charMap) {
+//     if (charMap[char] > maxNum) {
+//       maxNum = charMap[char];
+//       maxChar = char;
+//     }
+//     return maxChar;
+//   }
+// }
+// console.log(maxCharacter("qabas"));
+/////////////////////////////
+function addAll(...number) {}
+console.log(addAll(2, 3, 4, 5, 6));
