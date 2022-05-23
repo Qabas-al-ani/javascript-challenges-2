@@ -1427,5 +1427,7 @@
 // }
 // console.log(maxCharacter("qabas"));
 /////////////////////////////
-function addAll(...number) {}
+function addAll(...num) {
+  return num.reduce((acc, curr) => acc + curr);
+}
 console.log(addAll(2, 3, 4, 5, 6));
