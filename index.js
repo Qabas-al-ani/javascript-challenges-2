@@ -1483,5 +1483,10 @@
 // }
 // console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
 //////////////////////////
-function flattenedArray(arrays) {}
-console.log(flattenedArray([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+function flattenedArray(arrays) {
+  let newArr = arrays.reduce(function (acc, curr) {
+    return acc.concat(curr);
+  });
+  return newArr;
+}
+console.log(flattenedArray([1, 2], [3, 4], [5, 6], [7, 8], [9]));
