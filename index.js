@@ -1432,23 +1432,26 @@
 // }
 // console.log(addAll(2, 3, 4, 5, 6));
 //////////////////
-function allPrimes(num) {
-  let total = 0;
+// function allPrimes(num) {
+//   let total = 0;
 
-  function isPrime(i) {
-    for (let j = 2; j < i; j++) {
-      if (i % j === 0) {
-        return false;
-      }
-    }
-    return true;
-  }
+//   function isPrime(i) {
+//     for (let j = 2; j < i; j++) {
+//       if (i % j === 0) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
 
-  for (let i = 2; i <= num; i++) {
-    if (isPrime(i)) {
-      total += i;
-    }
-  }
-  return total;
-}
-console.log(allPrimes(100));
+//   for (let i = 2; i <= num; i++) {
+//     if (isPrime(i)) {
+//       total += i;
+//     }
+//   }
+//   return total;
+// }
+// console.log(allPrimes(100));
+//////////////////////////
+function longestWordArray(sen) {}
+console.log(longestWordArray("hello, my name is qabas"));
