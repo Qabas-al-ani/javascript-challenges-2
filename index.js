@@ -1472,13 +1472,16 @@
 // }
 // console.log(longestWordArray("hello, my name is, qabas"));
 ///////////////////
-function chunkedArray(arr, len) {
-  let chunkedArr = [];
-  let i = 0;
-  while (i < arr.length) {
-    chunkedArr.push(arr.slice(i, i + len));
-    i += len;
-  }
-  return chunkedArr;
-}
-console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
+// function chunkedArray(arr, len) {
+//   let chunkedArr = [];
+//   let i = 0;
+//   while (i < arr.length) {
+//     chunkedArr.push(arr.slice(i, i + len));
+//     i += len;
+//   }
+//   return chunkedArr;
+// }
+// console.log(chunkedArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
+//////////////////////////
+function flattenedArray(arrays) {}
+console.log(flattenedArray([1, 2, 3, 4, 5, 6, 7, 8, 9]));
