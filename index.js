@@ -1453,5 +1453,21 @@
 // }
 // console.log(allPrimes(100));
 //////////////////////////
-function longestWordArray(sen) {}
-console.log(longestWordArray("hello, my name is qabas"));
+function longestWordArray(sen) {
+  let newWordArr = sen
+    .toLowerCase()
+
+    .match(/[a-z0-9]+/g);
+  let sortedArr = newWordArr.sort(function (a, b) {
+    return b.length - a.length;
+  });
+  let filteredArr = sortedArr.filter(function (word) {
+    return word.length === sortedArr[0].length;
+  });
+  if (filteredArr.length === 1) {
+    return filteredArr[0];
+  } else {
+    return filteredArr;
+  }
+}
+console.log(longestWordArray("hello, my name is, qabas"));
