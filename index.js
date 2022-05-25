@@ -1631,5 +1631,19 @@
 // }
 // console.log(evenOddNum([50, 60, 60, 45, 71]));
 //////////////////
-function longestWordArray(sen) {}
-console.log(longestWordArray("hello, my name is qabas"));
+function longestWordArray(sen) {
+  let newWordArr = sen.toLowerCase().match(/[a-z0-9]+/g);
+
+  let sortedArray = newWordArr.sort((a, b) => b.length - a.length);
+
+  let filteredArr = sortedArray.filter(
+    word => word.length === sortedArray[0].length
+  );
+
+  if (filteredArr.length === 1) {
+    return filteredArr[0];
+  } else {
+    return filteredArr;
+  }
+}
+console.log(longestWordArray("hello, my name is qabasa"));
