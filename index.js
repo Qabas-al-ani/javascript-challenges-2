@@ -1591,19 +1591,22 @@
 // }
 // console.log(seekAndDestroy([1, 2, 3, 3, 4, "hello"], 3));
 //////////////////////
-function sortByHeight(a) {
-  let arr1 = [];
-  let arr2 = [];
+// function sortByHeight(a) {
+//   let arr1 = [];
+//   let arr2 = [];
 
-  a.forEach((val, i) => {
-    if (val === -1) {
-      arr1.push(i);
-    } else {
-      arr2.push(val);
-    }
-  });
-  let sortedArr = arr2.sort((a, b) => a - b);
-  arr1.forEach((val, i) => sortedArr.splice(arr1[i], 0, -1));
-  return sortedArr;
-}
-console.log(sortByHeight([-1, 80, 90, -1, -1, 110, 100]));
+//   a.forEach((val, i) => {
+//     if (val === -1) {
+//       arr1.push(i);
+//     } else {
+//       arr2.push(val);
+//     }
+//   });
+//   let sortedArr = arr2.sort((a, b) => a - b);
+//   arr1.forEach((val, i) => sortedArr.splice(arr1[i], 0, -1));
+//   return sortedArr;
+// }
+// console.log(sortByHeight([-1, 80, 90, -1, -1, 110, 100]));
+///////////////////////////
+function missingLetter() {}
+console.log(missingLetter("abce"));
