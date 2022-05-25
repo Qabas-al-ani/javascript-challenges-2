@@ -1586,5 +1586,7 @@
 // }
 // console.log(primeNumber(10));
 /////////////////////////////////
-function seekAndDestroy() {}
-console.log(seekAndDestroy([1, 2, 3, 3, 4, "hello"]));
+function seekAndDestroy(arr, ...rest) {
+  return arr.filter(val => !rest.includes(val));
+}
+console.log(seekAndDestroy([1, 2, 3, 3, 4, "hello"], 3));
