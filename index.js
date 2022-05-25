@@ -1518,5 +1518,9 @@
 // }
 // console.log(isPalindrome("madam"));
 /////////////////////////////
-function reverseInt() {}
-console.log(reverseInt(123));
+function reverseInt(int) {
+  let newNum = int.toString().split("").reverse().join("");
+
+  return parseInt(newNum) * Math.sign(int);
+}
+console.log(reverseInt(-123));
