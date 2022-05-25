@@ -1512,8 +1512,11 @@
 // }
 // console.log(reverseStr("hello"));
 ///////////////////
-function isPalindrome(str) {
-  let newWordArr = str.split("").reverse().join("");
-  return newWordArr === str;
-}
-console.log(isPalindrome("madam"));
+// function isPalindrome(str) {
+//   let newWordArr = str.split("").reverse().join("");
+//   return newWordArr === str;
+// }
+// console.log(isPalindrome("madam"));
+/////////////////////////////
+function reverseInt() {}
+console.log(reverseInt(123));
