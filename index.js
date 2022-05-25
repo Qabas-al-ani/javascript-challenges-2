@@ -1518,9 +1518,12 @@
 // }
 // console.log(isPalindrome("madam"));
 /////////////////////////////
-function reverseInt(int) {
-  let newNum = int.toString().split("").reverse().join("");
+// function reverseInt(int) {
+//   let newNum = int.toString().split("").reverse().join("");
 
-  return parseInt(newNum) * Math.sign(int);
-}
-console.log(reverseInt(-123));
+//   return parseInt(newNum) * Math.sign(int);
+// }
+// console.log(reverseInt(-123));
+////////////////////
+function capitalizeLetter(str) {}
+console.log(capitalizeLetter("hello my name is qabas "));
