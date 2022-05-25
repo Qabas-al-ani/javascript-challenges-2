@@ -1623,10 +1623,13 @@
 // }
 // console.log(missingLetter("abce"));
 /////////////////////////////
-function evenOddNum(arr) {
-  let evenNum = 0;
-  let oddNum = 0;
-  arr.forEach(num => (num % 2 === 0 ? (evenNum += num) : (oddNum += num)));
-  return [evenNum, oddNum];
-}
-console.log(evenOddNum([50, 60, 60, 45, 71]));
+// function evenOddNum(arr) {
+//   let evenNum = 0;
+//   let oddNum = 0;
+//   arr.forEach(num => (num % 2 === 0 ? (evenNum += num) : (oddNum += num)));
+//   return [evenNum, oddNum];
+// }
+// console.log(evenOddNum([50, 60, 60, 45, 71]));
+//////////////////
+function longestWordArray(sen) {}
+console.log(longestWordArray("hello, my name is qabas"));
