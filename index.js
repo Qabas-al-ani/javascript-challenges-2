@@ -1507,5 +1507,7 @@
 // }
 // console.log(isAnagram("below", "elbow"));
 ////////////////////////////////////
-function reverseStr(str) {}
+function reverseStr(str) {
+  return str.split("").reverse().join("");
+}
 console.log(reverseStr("hello"));
