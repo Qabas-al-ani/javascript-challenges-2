@@ -1608,5 +1608,17 @@
 // }
 // console.log(sortByHeight([-1, 80, 90, -1, -1, 110, 100]));
 ///////////////////////////
-function missingLetter() {}
+function missingLetter(str) {
+  let compare = str.charCodeAt(0);
+  let missing;
+
+  str.split("").map((char, i) => {
+    if (str.charCodeAt(i) === compare) {
+      compare++;
+    } else {
+      missing = String.fromCharCode(compare);
+    }
+  });
+  return missing;
+}
 console.log(missingLetter("abce"));
