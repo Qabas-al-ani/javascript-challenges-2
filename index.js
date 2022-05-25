@@ -1525,13 +1525,16 @@
 // }
 // console.log(reverseInt(-123));
 ////////////////////
-function capitalizeLetter(str) {
-  let newWordArr = str.toLowerCase().split(" ");
+// function capitalizeLetter(str) {
+//   let newWordArr = str.toLowerCase().split(" ");
 
-  for (let i = 0; i < newWordArr.length; i++) {
-    newWordArr[i] =
-      newWordArr[i].substring(0, 1).toUpperCase() + newWordArr[i].substring(1);
-  }
-  return newWordArr.join(" ");
-}
-console.log(capitalizeLetter("hello my name is qabas "));
+//   for (let i = 0; i < newWordArr.length; i++) {
+//     newWordArr[i] =
+//       newWordArr[i].substring(0, 1).toUpperCase() + newWordArr[i].substring(1);
+//   }
+//   return newWordArr.join(" ");
+// }
+// console.log(capitalizeLetter("hello my name is qabas "));
+/////////////////////
+function maxCharacter(str) {}
+console.log(maxCharacter("qabas"));
