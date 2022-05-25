@@ -1558,9 +1558,12 @@
 // }
 // console.log(maxCharacter("qabas"));
 ////////////////////////
-function addAll(...numbers) {
-  let total = 0;
-  numbers.forEach(num => (total += num));
-  return total;
-}
-console.log(addAll(2, 1, 3, 5));
+// function addAll(...numbers) {
+//   let total = 0;
+//   numbers.forEach(num => (total += num));
+//   return total;
+// }
+// console.log(addAll(2, 1, 3, 5));
+/////////////////////
+function primeNumber() {}
+console.log(primeNumber(10));
