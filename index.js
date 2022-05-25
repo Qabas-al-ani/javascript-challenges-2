@@ -1565,5 +1565,23 @@
 // }
 // console.log(addAll(2, 1, 3, 5));
 /////////////////////
-function primeNumber() {}
+function primeNumber(num) {
+  let total = 0;
+
+  function isPrime(i) {
+    for (let j = 2; j < i; j++) {
+      if (i % j === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  for (let i = 2; i <= num; i++) {
+    if (isPrime(i)) {
+      total += i;
+    }
+  }
+  return total;
+}
 console.log(primeNumber(10));
