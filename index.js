@@ -1586,7 +1586,10 @@
 // }
 // console.log(primeNumber(10));
 /////////////////////////////////
-function seekAndDestroy(arr, ...rest) {
-  return arr.filter(val => !rest.includes(val));
-}
-console.log(seekAndDestroy([1, 2, 3, 3, 4, "hello"], 3));
+// function seekAndDestroy(arr, ...rest) {
+//   return arr.filter(val => !rest.includes(val));
+// }
+// console.log(seekAndDestroy([1, 2, 3, 3, 4, "hello"], 3));
+//////////////////////
+function sortByHeight(a) {}
+console.log(sortByHeight([-1, 80, 90, -1, -1, 110, 100]));
