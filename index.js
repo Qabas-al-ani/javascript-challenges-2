@@ -1512,5 +1512,8 @@
 // }
 // console.log(reverseStr("hello"));
 ///////////////////
-function isPalindrome(str) {}
-console.log(isPalindrome("qabas"));
+function isPalindrome(str) {
+  let newWordArr = str.split("").reverse().join("");
+  return newWordArr === str;
+}
+console.log(isPalindrome("madam"));
