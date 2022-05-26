@@ -1659,6 +1659,21 @@ let movieLengths = [60, 65, 80, 70, 75, 55, 40, 45, 85, 90, 95, 30, 35];
 
 function myFlight(flightTime) {
   let idealOutPut = [];
+
+  let sorted = movieLengths.sort((a, b) => a - b);
+
+  for (let i = 0; i < sorted.length; i++) {
+    for (let j = 0; j < sorted.length; j++) {
+      if (i !== j) {
+        console.log(sorted[i], sorted[j]);
+        if (sorted[i] + sorted[j] === flightTime) {
+          idealOutPut.push([sorted[i], sorted[j]]);
+        }
+      }
+    }
+  }
+
+  return idealOutPut;
 }
 
 console.log(myFlight(flightTime));
