@@ -1657,23 +1657,25 @@ let movieLengths = [60, 65, 80, 70, 75, 55, 40, 45, 85, 90, 95, 30, 35];
 //   [60, 70],[90, 40],
 // ];
 
-function myFlight(flightTime) {
-  let idealOutPut = [];
+// function myFlight(flightTime) {
+//   let idealOutPut = [];
 
-  let sorted = movieLengths.sort((a, b) => a - b);
+//   let sorted = movieLengths.sort((a, b) => a - b);
 
-  for (let i = 0; i < sorted.length; i++) {
-    for (let j = 0; j < sorted.length; j++) {
-      if (i !== j) {
-        console.log(sorted[i], sorted[j]);
-        if (sorted[i] + sorted[j] === flightTime) {
-          idealOutPut.push([sorted[i], sorted[j]]);
-        }
-      }
-    }
-  }
+//   for (let i = 0; i < sorted.length; i++) {
+//     for (let j = 0; j < sorted.length; j++) {
+//       if (i !== j) {
+//         console.log(sorted[i], sorted[j]);
+//         if (sorted[i] + sorted[j] === flightTime) {
+//           idealOutPut.push([sorted[i], sorted[j]]);
+//         }
+//       }
+//     }
+//   }
 
-  return idealOutPut;
-}
+//   return idealOutPut;
+// }
 
-console.log(myFlight(flightTime));
+// console.log(myFlight(flightTime));
+function longestWordArray(sen) {}
+console.table(longestWordArray("hello, my name is qabasa"));
