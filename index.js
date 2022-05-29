@@ -1677,19 +1677,22 @@ let movieLengths = [60, 65, 80, 70, 75, 55, 40, 45, 85, 90, 95, 30, 35];
 // }
 
 // console.log(myFlight(flightTime));
-function longestWordArray(sen) {
-  let newWordArr = sen.toLowerCase().match(/[a-z0-9]+/g);
+// function longestWordArray(sen) {
+//   let newWordArr = sen.toLowerCase().match(/[a-z0-9]+/g);
 
-  let sortedArray = newWordArr.sort((a, b) => b.length - a.length);
+//   let sortedArray = newWordArr.sort((a, b) => b.length - a.length);
 
-  let filteredArr = sortedArray.filter(
-    word => word.length === sortedArray[0].length
-  );
+//   let filteredArr = sortedArray.filter(
+//     word => word.length === sortedArray[0].length
+//   );
 
-  if (filteredArr.length === 1) {
-    return filteredArr[0];
-  } else {
-    return filteredArr;
-  }
-}
-console.table(longestWordArray("hello, my name is qabasa"));
+//   if (filteredArr.length === 1) {
+//     return filteredArr[0];
+//   } else {
+//     return filteredArr;
+//   }
+// }
+// console.table(longestWordArray("hello, my name is qabasa"));
+/////////////////
+function sumOfDifferences(arr) {}
+console.log(sumOfDifferences([10, 1, 2]));
