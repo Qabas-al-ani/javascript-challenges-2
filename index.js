@@ -1717,7 +1717,16 @@ let movieLengths = [60, 65, 80, 70, 75, 55, 40, 45, 85, 90, 95, 30, 35];
 //   return res.filter(e => e.length === n);
 // }
 ////////////////////
-const stringToNumber = function (str) {
-  // put your code here
-  return parseInt(str);
-};
+// const stringToNumber = function (str) {
+//   // put your code here
+//   return parseInt(str);
+// };
+///////////////////
+function between(a, b) {
+  // your code here
+  let arr = [];
+  for (let i = a; i <= b; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
