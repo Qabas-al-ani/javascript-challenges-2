@@ -1694,15 +1694,25 @@ let movieLengths = [60, 65, 80, 70, 75, 55, 40, 45, 85, 90, 95, 30, 35];
 // }
 // console.table(longestWordArray("hello, my name is qabasa"));
 /////////////////
-function sumOfDifferences(arr) {
-  let sum = 0;
-  let dif = 0;
-  let sortedArr = arr.sort((a, b) => b - a);
-  //    return  (sortedArr[0] -  sortedArr[1]) + (sortedArr[1] -  sortedArr[2])
-  for (let i = 0; i < sortedArr.length - 1; i++) {
-    dif = sortedArr[i] - sortedArr[i + 1];
-    sum += dif;
+// function sumOfDifferences(arr) {
+//   let sum = 0;
+//   let dif = 0;
+//   let sortedArr = arr.sort((a, b) => b - a);
+//   //    return  (sortedArr[0] -  sortedArr[1]) + (sortedArr[1] -  sortedArr[2])
+//   for (let i = 0; i < sortedArr.length - 1; i++) {
+//     dif = sortedArr[i] - sortedArr[i + 1];
+//     sum += dif;
+//   }
+//   return sum;
+// }
+// console.log(sumOfDifferences([10, 1, 2]));
+//////////////////
+function eachCons(array, n) {
+  let res = [];
+
+  for (let i = 0; i < array.length; i++) {
+    res.push(array.slice(i, i + n));
   }
-  return sum;
+
+  return res.filter(e => e.length === n);
 }
-console.log(sumOfDifferences([10, 1, 2]));
