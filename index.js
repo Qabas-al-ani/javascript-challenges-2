@@ -1731,20 +1731,25 @@ let movieLengths = [60, 65, 80, 70, 75, 55, 40, 45, 85, 90, 95, 30, 35];
 //   return arr;
 // }
 ///////////////////
-function howMuchILoveYou(nbPetals) {
-  if (nbPetals % 6 == 1) {
-    return "I love you";
-  } else if (nbPetals % 6 == 2) {
-    return "a little";
-  } else if (nbPetals % 6 == 3) {
-    return "a lot";
-  } else if (nbPetals % 6 == 4) {
-    return "passionately";
-  } else if (nbPetals % 6 == 5) {
-    return "madly";
-  } else {
-    return "not at all";
-  }
-}
+// function howMuchILoveYou(nbPetals) {
+//   if (nbPetals % 6 == 1) {
+//     return "I love you";
+//   } else if (nbPetals % 6 == 2) {
+//     return "a little";
+//   } else if (nbPetals % 6 == 3) {
+//     return "a lot";
+//   } else if (nbPetals % 6 == 4) {
+//     return "passionately";
+//   } else if (nbPetals % 6 == 5) {
+//     return "madly";
+//   } else {
+//     return "not at all";
+//   }
+// }
 
-howMuchILoveYou(0);
+// howMuchILoveYou(0);
+//////////////////////
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return i * 2;
+}
