@@ -1707,12 +1707,17 @@ let movieLengths = [60, 65, 80, 70, 75, 55, 40, 45, 85, 90, 95, 30, 35];
 // }
 // console.log(sumOfDifferences([10, 1, 2]));
 //////////////////
-function eachCons(array, n) {
-  let res = [];
+// function eachCons(array, n) {
+//   let res = [];
 
-  for (let i = 0; i < array.length; i++) {
-    res.push(array.slice(i, i + n));
-  }
+//   for (let i = 0; i < array.length; i++) {
+//     res.push(array.slice(i, i + n));
+//   }
 
-  return res.filter(e => e.length === n);
-}
+//   return res.filter(e => e.length === n);
+// }
+////////////////////
+const stringToNumber = function (str) {
+  // put your code here
+  return parseInt(str);
+};
