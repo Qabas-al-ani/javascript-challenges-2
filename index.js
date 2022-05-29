@@ -1722,11 +1722,29 @@ let movieLengths = [60, 65, 80, 70, 75, 55, 40, 45, 85, 90, 95, 30, 35];
 //   return parseInt(str);
 // };
 ///////////////////
-function between(a, b) {
-  // your code here
-  let arr = [];
-  for (let i = a; i <= b; i++) {
-    arr.push(i);
+// function between(a, b) {
+//   // your code here
+//   let arr = [];
+//   for (let i = a; i <= b; i++) {
+//     arr.push(i);
+//   }
+//   return arr;
+// }
+///////////////////
+function howMuchILoveYou(nbPetals) {
+  if (nbPetals % 6 == 1) {
+    return "I love you";
+  } else if (nbPetals % 6 == 2) {
+    return "a little";
+  } else if (nbPetals % 6 == 3) {
+    return "a lot";
+  } else if (nbPetals % 6 == 4) {
+    return "passionately";
+  } else if (nbPetals % 6 == 5) {
+    return "madly";
+  } else {
+    return "not at all";
   }
-  return arr;
 }
+
+howMuchILoveYou(0);
