@@ -1649,9 +1649,9 @@
 // console.table(longestWordArray("hello, my name is qabasa"));
 ///////////////////////
 
-const flightTime = 130;
+// const flightTime = 130;
 
-let movieLengths = [60, 65, 80, 70, 75, 55, 40, 45, 85, 90, 95, 30, 35];
+// let movieLengths = [60, 65, 80, 70, 75, 55, 40, 45, 85, 90, 95, 30, 35];
 
 // Ideal output: [
 //   [60, 70],[90, 40],
@@ -1749,7 +1749,40 @@ let movieLengths = [60, 65, 80, 70, 75, 55, 40, 45, 85, 90, 95, 30, 35];
 
 // howMuchILoveYou(0);
 //////////////////////
-function doubleInteger(i) {
-  // i will be an integer. Double it and return it.
-  return i * 2;
+// function doubleInteger(i) {
+//   // i will be an integer. Double it and return it.
+//   return i * 2;
+// }
+// const arr = [1, 2, 1, 5, 7, 3, 4, 5, 6, 7, 8, 9];
+// console.log([new Set(arr)]);
+// function XO(str) {
+//   let x = 0;
+//   let o = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] == "x" || str[i] == "X") {
+//       x++;
+//     } else if (str[i] == "o" || str[i] == "O") {
+//       o++;
+//     }
+//   }
+//   console.log("x = ", o);
+//   //         if(x === o) {
+//   //     return true
+
+//   //   }
+//   if (!x && !o) {
+//     return true;
+//   }
+//   return x == o;
+// }
+// console.log(XO("zpzxxxxxxxoooo"));
+//////////////////////////
+const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+
+function countPositivesSumNegatives(input) {
+  let outPut = [];
+  let positveNum = 0;
+  let negativeNum = 0;
+
+  for (let i = 0; i < input.length; i++) {}
 }
