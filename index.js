@@ -1779,10 +1779,5 @@
 //////////////////////////
 const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
 
-function countPositivesSumNegatives(input) {
-  let outPut = [];
-  let positveNum = 0;
-  let negativeNum = 0;
-
-  for (let i = 0; i < input.length; i++) {}
-}
+function countPositivesSumNegatives(input) {}
+console.log();
