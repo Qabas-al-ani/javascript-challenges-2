@@ -1777,16 +1777,17 @@
 // }
 // console.log(XO("zpzxxxxxxxoooo"));
 //////////////////////////
-const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+// const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
 
-function countPositivesSumNegatives(input) {
-  let positiveNums = 0;
-  let negativeNums = 0;
-  if (input === null || input.length === 0) {
-    return [];
-  } else {
-    input.forEach(num => (num > 0 ? positiveNums++ : (negativeNums += num)));
-  }
-  return [positiveNums, negativeNums];
-}
-// console.log(countPositivesSumNegatives());
+// function countPositivesSumNegatives(input) {
+//   let positiveNums = 0;
+//   let negativeNums = 0;
+//   if (input === null || input.length === 0) {
+//     return [];
+//   } else {
+//     input.forEach(num => (num > 0 ? positiveNums++ : (negativeNums += num)));
+//   }
+//   return [positiveNums, negativeNums];
+// }
+// // console.log(countPositivesSumNegatives());
+console.log((100.1 / 5) % 1 === 0 && (100.1 / 20) % 1 === 0);
