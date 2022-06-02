@@ -1801,5 +1801,6 @@
 // smallestNum(arr);
 
 ///////////
-const str = ["hello my world is you"];
-console.log(str.replaceAll(" ", ""));
+const n = [1, 2, 3];
+function doubled(arr) {}
+console.log(doubled());
