@@ -1792,7 +1792,14 @@
 // // // console.log(countPositivesSumNegatives());
 // console.log((100.1 / 5) % 1 === 0 && (100.1 / 20) % 1 === 0);
 
-const arr = [134, 24, 355, 455, 555, 643, 7, 100];
+// const arr = [134, 24, 355, 455, 555, 643, 7, 100];
 
-function smallestNum(arr) {}
-console.log(smallestNum);
+// function smallestNum(arr) {
+//   let newNum = [];
+//   return arr.Math.min(newNum);
+// }
+// smallestNum(arr);
+
+///////////
+const str = ["hello my world is you"];
+console.log(str.replaceAll(" ", ""));
