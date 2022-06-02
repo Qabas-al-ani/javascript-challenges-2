@@ -1801,6 +1801,10 @@
 // smallestNum(arr);
 
 ///////////
-const n = [1, 2, 3];
-function doubled(arr) {}
-console.log(doubled());
+
+function doubled(arr) {
+  return arr.map(n => {
+    return n * 2;
+  });
+}
+console.log(doubled([1, 2, 3]));
